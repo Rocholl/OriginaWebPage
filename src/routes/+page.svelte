@@ -28,28 +28,18 @@
 	
 	const projects = [
 		{
-			title: 'Talleres de Expresión Creativa y Narración',
-			excerpt: 'Talleres de expresión creativa, fotografía narrativa, cuentos migrantes, círculos de palabra y narración comunitaria para preservar y transmitir la memoria identitaria de la infancia migrante.',
-			image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop',
-			link: '#'
+			id: 1,
+			title: 'Comunidad Nosotras las que Migramos (NQM)',
+			excerpt: 'Proyecto social y comunitario sin ánimo de lucro que acompaña, fortalece y visibiliza a las mujeres migrantes, transformando la experiencia migrante en motor de cambio social.',
+			image: '/nqm.jpg',
+			link: '/projects?id=1'
 		},
 		{
-			title: 'Actividades Escolares y Comunitarias',
-			excerpt: 'Actividades escolares, familiares y comunitarias orientadas al arraigo, la memoria y la diversidad cultural, fomentando el diálogo intergeneracional y la participación comunitaria.',
-			image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=300&fit=crop',
-			link: '#'
-		},
-		{
-			title: 'Formación y Producción Cultural',
-			excerpt: 'Formación de agentes educativos, narradoras comunitarias y facilitadoras migrantes. Producción y difusión de materiales culturales y pedagógicos sobre la memoria afectiva de la infancia migrante.',
+			id: 2,
+			title: 'Curso Doula Migrante',
+			excerpt: 'Curso para formar acompañantes conscientes, culturalmente sensibles y con enfoque de derechos humanos, capaces de acompañar nacimientos y procesos migratorios con conciencia, derechos y comunidad.',
 			image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
-			link: '#'
-		},
-		{
-			title: 'Ciclo de Cine Paraguayo',
-			excerpt: 'Ciclo trimestral de cine paraguayo en espacios comunitarios, promoviendo la diversidad cultural y el diálogo intergeneracional a través del arte cinematográfico.',
-			image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=300&fit=crop',
-			link: '#'
+			link: '/projects?id=2'
 		}
 	];
 	

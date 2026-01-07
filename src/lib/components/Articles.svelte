@@ -12,7 +12,7 @@
 		</h2>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
 			{#each articles as article}
-				<article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
+				<article id={article.id ? `project-${article.id}` : undefined} class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
 					{#if article.image}
 						<div class="w-full h-40 sm:h-48 overflow-hidden">
 							<img

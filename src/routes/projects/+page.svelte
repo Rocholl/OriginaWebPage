@@ -1,5 +1,6 @@
 <script>
 	import { _ } from 'svelte-i18n';
+	import { page } from '$app/stores';
 	import { Users, Heart, MapPin, ArrowRight, Target, Eye, Shield, Sparkles, Baby, GraduationCap } from 'lucide-svelte';
 	
 	const projects = [
@@ -74,7 +75,24 @@
 		}
 	];
 	
-	let selectedProjectId = $state(/** @type {number | null} */ (null));
+	// Leer el ID del proyecto desde la URL
+	let urlProjectId = $derived(() => {
+		const idParam = $page.url.searchParams.get('id');
+		return idParam ? parseInt(idParam, 10) : null;
+	});
+	
+	let selectedProjectId = $state(/** @type {number | null} */ (urlProjectId()));
+	
+	// Actualizar cuando cambie la URL
+	$effect(() => {
+		const idFromUrl = urlProjectId();
+		if (idFromUrl && projects.find(p => p.id === idFromUrl)) {
+			selectedProjectId = idFromUrl;
+			if (typeof window !== 'undefined') {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+		}
+	});
 	
 	/**
 	 * @param {number | null} id
@@ -83,11 +101,20 @@
 		selectedProjectId = id;
 		if (typeof window !== 'undefined') {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
+			// Actualizar la URL sin recargar la página
+			const url = new URL(window.location.href);
+			url.searchParams.set('id', id.toString());
+			window.history.pushState({}, '', url);
 		}
 	}
 	
 	function closeProject() {
 		selectedProjectId = null;
+		if (typeof window !== 'undefined') {
+			const url = new URL(window.location.href);
+			url.searchParams.delete('id');
+			window.history.pushState({}, '', url);
+		}
 	}
 	
 	let selectedProject = $derived(projects.find(p => p.id === selectedProjectId) || null);
