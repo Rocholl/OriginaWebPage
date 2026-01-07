@@ -294,6 +294,19 @@
 								{$_('projects.collaborate')}
 							</a>
 						</div>
+						
+						{#if project.copyright || project.license}
+							<div class="mt-8 pt-8 border-t border-gray-200">
+								<div class="text-center text-sm text-dark-500 space-y-2">
+									{#if project.copyright}
+										<p class="font-semibold">{project.copyright}</p>
+									{/if}
+									{#if project.license}
+										<p class="leading-relaxed">{project.license}</p>
+									{/if}
+								</div>
+							</div>
+						{/if}
 					</div>
 				</article>
 			</div>

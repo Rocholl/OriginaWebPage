@@ -287,7 +287,9 @@
 				"status": "Activo",
 				"scope": "Mujeres migrantes (educativo, social, cultural y comunitario)",
 				"founder": "Ana Paniagua T.",
-				"organization": "ONG Origina Memoria e Infancia en Movimiento"
+				"organization": "ONG Origina Memoria e Infancia en Movimiento",
+				"copyright": "© 2025 Ana Paniagua T.",
+				"license": "Esta obra está bajo licencia Creative Commons Atribución – No Comercial – Sin Derivadas (CC BY-NC-ND). No se permite su uso comercial ni la creación de obras derivadas sin autorización expresa de la autora"
 			},
 			{
 				"id": 2,
@@ -329,7 +331,9 @@
 				"certification": "Certificado de participación emitido por Origina – Memoria e Infancia en Movimiento",
 				"founder": "Ana Paniagua T.",
 				"organization": "ONG Origina – Memoria e Infancia en Movimiento",
-				"project": "Nosotras las que Migramos (NQM)"
+				"project": "Nosotras las que Migramos (NQM)",
+				"copyright": "© 2025 Ana Paniagua T.",
+				"license": "Esta obra está bajo licencia Creative Commons Atribución – No Comercial – Sin Derivadas (CC BY-NC-ND). No se permite su uso comercial ni la creación de obras derivadas sin autorización expresa de la autora"
 			}
 		],
 		"detail": {

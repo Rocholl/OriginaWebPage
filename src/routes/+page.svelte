@@ -1,7 +1,6 @@
 <script>
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Articles from '$lib/components/Articles.svelte';
-	import ImpactStats from '$lib/components/ImpactStats.svelte';
 	import { _ } from 'svelte-i18n';
 	import { Heart, Share2, Users, Target, Eye, Shield, Users2, HeartHandshake, Instagram } from 'lucide-svelte';
 	
@@ -43,19 +42,6 @@
 		}
 	];
 	
-	// Las estadísticas se pasarán como props reactivas al componente
-	const impactStatsKeys = [
-		{ value: '15,000+', key: 'home.impact.people' },
-		{ value: '25', key: 'home.impact.projects' },
-		{ value: '50+', key: 'home.impact.communities' },
-		{ value: '10+', key: 'home.impact.years' }
-	];
-	
-	// Función derivada para obtener las estadísticas con traducciones
-	$: impactStats = impactStatsKeys.map(stat => ({
-		value: stat.value,
-		label: $_(stat.key)
-	}));
 </script>
 
 <svelte:head>
@@ -182,7 +168,6 @@
 	</section>
 	
 	<!-- Impact Stats Section -->
-	<ImpactStats stats={impactStats} />
 	
 	<!-- Projects Section -->
 	<Articles articles={projects} />
