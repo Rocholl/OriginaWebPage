@@ -1,0 +1,263 @@
+{
+	"header": {
+		"home": "Inicio",
+		"about": "Sobre nosotros",
+		"projects": "Proyectos",
+		"workshops": "Talleres",
+		"contact": "Formulario Memoria Viva",
+		"donate": "Donar"
+	},
+	"home": {
+		"title": "Construyamos una infancia que abrace la diversidad",
+		"subtitle": "Preservando la memoria identitaria de la infancia migrante y fortaleciendo su arraigo positivo",
+		"mission": {
+			"title": "Nuestra Misión",
+			"description": "Preservar, cuidar y transmitir la memoria identitaria de la infancia migrante. Visibilizar y fortalecer la historia de las mujeres migrantes como agentes culturales, cuidadoras y sostenedoras de la memoria. Ofrecer espacios de sostenibilidad emocional, social y cultural que fomenten la resiliencia y el arraigo positivo desde la infancia."
+		},
+		"vision": {
+			"title": "Nuestra Visión",
+			"description": "Promover la diversidad cultural, el diálogo intergeneracional y la participación comunitaria. Construir redes de apoyo, formación y acción que contribuyan a la reparación simbólica de la memoria migrante, denunciando cualquier forma de violencia, exclusión o discriminación hacia la infancia migrante y sus familias."
+		},
+		"values": {
+			"title": "Nuestros Valores",
+			"transparency": "Memoria e Identidad",
+			"transparencyDesc": "Preservar y transmitir la memoria identitaria de la infancia migrante como base de su desarrollo",
+			"commitment": "Diversidad Cultural",
+			"commitmentDesc": "Promover el diálogo intergeneracional y la participación comunitaria desde el respeto a la diversidad",
+			"solidarity": "Resiliencia y Arraigo",
+			"solidarityDesc": "Fomentar el arraigo positivo y la pertenencia desde la infancia, construyendo espacios de sostenibilidad emocional"
+		},
+		"projects": {
+			"title": "Nuestros Proyectos",
+			"readMore": "Conocer más"
+		},
+		"impact": {
+			"title": "Nuestro Impacto",
+			"people": "Personas beneficiadas",
+			"projects": "Proyectos activos",
+			"communities": "Comunidades alcanzadas",
+			"years": "Años de trabajo"
+		},
+		"help": {
+			"title": "¿Cómo puedes ayudar?",
+			"donate": "Donar",
+			"donateDesc": "Tu contribución hace posible nuestros proyectos",
+			"spread": "Difundir",
+			"spreadDesc": "Comparte nuestra causa en tus redes sociales"
+		}
+	},
+	"about": {
+		"title": "Sobre Origina",
+		"subtitle": "ORIGINA – Infancia y Memoria en Movimiento",
+		"presentation": {
+			"title": "Presentación",
+			"description": "ORIGINA – Infancia y Memoria en Movimiento es una organización sin ánimo de lucro fundada en Las Palmas de Gran Canaria con el propósito de proteger, recuperar y fortalecer la memoria identitaria de la infancia migrante paraguaya y latinoamericana, así como la de sus familias, incluyendo niñas y niños nacidos en España o en tránsito migratorio.",
+			"description2": "Somos un espacio comunitario que cuida, acompaña y dignifica las historias que sostienen a nuestra infancia. ORIGINA nace desde las madres migrantes, las cuidadoras y las familias que creen que la memoria también es un derecho."
+		},
+		"legal": {
+			"title": "Marco Legal y Registro",
+			"name": "Denominación completa",
+			"nameValue": "ORIGINA – Infancia y Memoria en Movimiento",
+			"nature": "Naturaleza jurídica",
+			"natureValue": "Asociación sin ánimo de lucro",
+			"registry": "Registro de Asociaciones de Canarias",
+			"registryNumber": "Nº 28063",
+			"resolution": "Resolución de inscripción",
+			"resolutionDate": "21 de noviembre de 2025",
+			"scope": "Ámbito territorial",
+			"scopeValue": "Canarias, España y participación internacional"
+		},
+		"mission": {
+			"title": "Misión",
+			"description": "Acompañar a la infancia migrante y a sus familias en el fortalecimiento de su identidad cultural y emocional, mediante proyectos educativos, artísticos, terapéuticos y comunitarios."
+		},
+		"vision": {
+			"title": "Visión",
+			"description": "Ser una organización referente en Canarias y España en la protección de la memoria migrante, promoviendo integración social, bienestar emocional, derechos de la infancia y sostenibilidad humana."
+		},
+		"values": {
+			"title": "Valores",
+			"items": ["Identidad", "Infancia", "Memoria", "Comunidad", "Diversidad", "Respeto cultural", "Derechos humanos", "Sostenibilidad emocional", "Cuidado intergeneracional"]
+		},
+		"objectives": {
+			"title": "Objetivos Generales",
+			"items": [
+				"Preservar y fortalecer la memoria identitaria de niños, niñas y adolescentes migrantes",
+				"Crear espacios seguros de sostenibilidad emocional, artística y cultural",
+				"Promover la participación comunitaria, la convivencia y el arraigo positivo",
+				"Impulsar iniciativas educativas con enfoque intercultural",
+				"Luchar contra toda forma de discriminación, racismo, acoso o violencia hacia la infancia migrante",
+				"Documentar, visibilizar y valorar las historias, voces y experiencias migratorias"
+			]
+		},
+		"areas": {
+			"title": "Áreas de Trabajo",
+			"items": [
+				"Infancia y Educación Intercultural",
+				"Acompañamiento emocional y comunitario",
+				"Memoria migrante y archivos afectivos",
+				"Arte, narrativas y expresión creativa",
+				"Familias migrantes y cuidado colectivo",
+				"Formación y sensibilización social",
+				"Igualdad, diversidad y derechos humanos"
+			]
+		},
+		"team": {
+			"title": "Equipo y Estructura Organizativa",
+			"board": "Junta Directiva",
+			"president": "Presidenta",
+			"secretary": "Secretario",
+			"treasurer": "Tesorera",
+			"vocal": "Vocal"
+		},
+		"beneficiaries": {
+			"title": "Público Beneficiario",
+			"items": [
+				"Niños, niñas y adolescentes migrantes",
+				"Hijos/as de migrantes nacidos en España",
+				"Familias migrantes",
+				"Mujeres migrantes",
+				"Comunidades vulnerabilizadas o racializadas",
+				"Centros educativos",
+				"Entidades sociales y comunitarias"
+			]
+		},
+		"funding": {
+			"title": "Modelo Económico y Financiación",
+			"items": [
+				"Cuotas simbólicas voluntarias (desde 5€/mes)",
+				"Donaciones privadas",
+				"Subvenciones públicas (Cabildo, Ayuntamiento, Gobierno de Canarias, UE)",
+				"Actividades autofinanciadas",
+				"Proyectos subvencionados nacionales e internacionales"
+			],
+			"transparency": "Se garantiza transparencia, buen uso de fondos y memorias anuales de actividades."
+		},
+		"sustainability": {
+			"title": "Sostenibilidad Emocional y Ecológica",
+			"description": "ORIGINA incorpora un capítulo específico de sostenibilidad que incluye:",
+			"items": [
+				"Enfoque de bienestar emocional para la infancia migrante",
+				"Espacios de silencio, pausa y escucha profunda",
+				"Prácticas de cuidado mutuo en todos los talleres",
+				"Uso responsable de materiales",
+				"Reutilización creativa y economía circular",
+				"Actividades al aire libre que conectan naturaleza y memoria"
+			]
+		}
+	},
+	"contact": {
+		"title": "Contáctanos",
+		"subtitle": "Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.",
+		"name": "Nombre",
+		"email": "Email",
+		"subject": "Asunto",
+		"message": "Mensaje",
+		"send": "Enviar",
+		"donate": "Quiero donar",
+		"info": "Solicitar información",
+		"other": "Otro",
+		"placeholder": {
+			"name": "Tu nombre",
+			"email": "tu@email.com",
+			"subject": "Selecciona un asunto",
+			"message": "Escribe tu mensaje aquí..."
+		}
+	},
+	"footer": {
+		"rights": "Todos los derechos reservados",
+		"follow": "Síguenos",
+		"mission": "Misión",
+		"contact": "Contacto",
+		"donate": "Donar"
+	},
+	"carousel": {
+		"next": "Siguiente",
+		"prev": "Anterior"
+	},
+	"workshops": {
+		"title": "Talleres",
+		"subtitle": "Espacios creativos para fortalecer la memoria identitaria",
+		"description": "Nuestros talleres están diseñados para acompañar a la infancia migrante y a sus familias en el fortalecimiento de su identidad cultural y emocional. Cada taller incorpora prácticas de cuidado mutuo, sostenibilidad emocional y respeto por la diversidad cultural.",
+		"forChildren": {
+			"title": "Talleres para la Infancia Migrante",
+			"subtitle": "Espacios seguros de expresión creativa y memoria",
+			"workshops": [
+				{
+					"title": "Fotografía Narrativa y Memoria Visual",
+					"description": "Taller donde niños, niñas y adolescentes aprenden a contar sus historias a través de la fotografía, creando un archivo visual de su memoria migrante y fortaleciendo su identidad cultural.",
+					"icon": "camera"
+				},
+				{
+					"title": "Bordado de Identidad y Símbolos Culturales",
+					"description": "A través del bordado, los participantes expresan su identidad cultural, creando piezas que representan sus raíces, tradiciones y memoria familiar.",
+					"icon": "needle"
+				},
+				{
+					"title": "Círculos de Palabra",
+					"description": "Espacios de diálogo intergeneracional donde se comparten historias familiares, experiencias migratorias y saberes comunitarios, fortaleciendo los lazos entre generaciones.",
+					"icon": "users"
+				},
+				{
+					"title": "Juegos Cooperativos y Pertenencia",
+					"description": "Actividades lúdicas que promueven el trabajo en equipo, la cooperación y el sentido de pertenencia a la comunidad, creando vínculos positivos entre participantes.",
+					"icon": "gamepad"
+				},
+				{
+					"title": "Cuentos Migrantes y Narradoras Comunitarias",
+					"description": "Taller de creación y narración de cuentos donde se visibilizan las historias migratorias, fortaleciendo la memoria colectiva y el papel de las mujeres como narradoras comunitarias.",
+					"icon": "book"
+				}
+			]
+		},
+		"training": {
+			"title": "Formación y Sensibilización",
+			"subtitle": "Capacitación para profesionales y agentes comunitarios",
+			"workshops": [
+				{
+					"title": "Formación para Agentes Comunitarios",
+					"description": "Programa de capacitación dirigido a personas que trabajan en comunidades migrantes, proporcionando herramientas para el acompañamiento emocional y cultural.",
+					"icon": "graduation"
+				},
+				{
+					"title": "Sensibilización en Centros Educativos",
+					"description": "Talleres y charlas en escuelas e institutos para promover la diversidad cultural, el respeto y la inclusión de la infancia migrante en el ámbito educativo.",
+					"icon": "school"
+				},
+				{
+					"title": "Talleres para Profesionales de la Migración",
+					"description": "Formación especializada para profesionales que trabajan con población migrante, enfocada en memoria identitaria, derechos de la infancia y enfoque intercultural.",
+					"icon": "briefcase"
+				}
+			]
+		},
+		"sustainability": {
+			"title": "Enfoque de Sostenibilidad",
+			"description": "Todos nuestros talleres incorporan prácticas de sostenibilidad emocional y ecológica:",
+			"items": [
+				"Espacios de silencio, pausa y escucha profunda",
+				"Prácticas de cuidado mutuo en todos los talleres",
+				"Uso responsable de materiales",
+				"Reutilización creativa y economía circular",
+				"Actividades al aire libre que conectan naturaleza y memoria"
+			]
+		},
+		"beneficiaries": {
+			"title": "¿Para quién son estos talleres?",
+			"items": [
+				"Niños, niñas y adolescentes migrantes",
+				"Hijos/as de migrantes nacidos en España",
+				"Familias migrantes",
+				"Mujeres migrantes",
+				"Agentes comunitarios y educadores",
+				"Profesionales de la migración"
+			]
+		},
+		"contact": {
+			"title": "¿Interesado en nuestros talleres?",
+			"description": "Contáctanos para más información sobre fechas, horarios y cómo participar",
+			"button": "Contactar"
+		}
+	}
+}
+

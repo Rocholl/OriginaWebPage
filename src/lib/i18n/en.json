@@ -1,0 +1,98 @@
+{
+	"header": {
+		"home": "Home",
+		"about": "About us",
+		"projects": "Projects",
+		"contact": "Contact us",
+		"donate": "Donate"
+	},
+	"home": {
+		"title": "Let's build a childhood that embraces diversity",
+		"subtitle": "Preserving the identity memory of migrant children and strengthening their positive roots",
+		"mission": {
+			"title": "Our Mission",
+			"description": "Preserve, care for and transmit the identity memory of migrant children. Make visible and strengthen the history of migrant women as cultural agents, caregivers and sustainers of memory. Offer spaces of emotional, social and cultural sustainability that foster resilience and positive roots from childhood."
+		},
+		"vision": {
+			"title": "Our Vision",
+			"description": "Promote cultural diversity, intergenerational dialogue and community participation. Build networks of support, training and action that contribute to the symbolic repair of migrant memory, denouncing any form of violence, exclusion or discrimination towards migrant children and their families."
+		},
+		"values": {
+			"title": "Our Values",
+			"transparency": "Memory and Identity",
+			"transparencyDesc": "Preserve and transmit the identity memory of migrant children as the basis of their development",
+			"commitment": "Cultural Diversity",
+			"commitmentDesc": "Promote intergenerational dialogue and community participation from respect for diversity",
+			"solidarity": "Resilience and Roots",
+			"solidarityDesc": "Foster positive roots and belonging from childhood, building spaces of emotional sustainability"
+		},
+		"projects": {
+			"title": "Our Projects",
+			"readMore": "Learn more"
+		},
+		"impact": {
+			"title": "Our Impact",
+			"people": "People benefited",
+			"projects": "Active projects",
+			"communities": "Communities reached",
+			"years": "Years of work"
+		},
+		"help": {
+			"title": "How can you help?",
+			"donate": "Donate",
+			"donateDesc": "Your contribution makes our projects possible",
+			"spread": "Spread the word",
+			"spreadDesc": "Share our cause on your social networks"
+		}
+	},
+	"about": {
+		"title": "About Origina",
+		"description": "ORIGINA – MEMORIA E INFANCIA EN MOVIMIENTO is a non-profit association established under Organic Law 1/2002, which develops its activities mainly in the Canary Islands, extending its action to the rest of Spain and cooperating in supranational or international programs.",
+		"mission": {
+			"title": "Mission",
+			"description": "Our mission focuses on preserving, caring for and transmitting the identity memory of migrant children; making visible and strengthening the history of migrant women as cultural agents, caregivers and sustainers of memory; and offering spaces of emotional, social and cultural sustainability that foster resilience, positive roots and belonging from childhood."
+		},
+		"vision": {
+			"title": "Vision",
+			"description": "Promote cultural diversity, intergenerational dialogue and community participation. Build networks of support, training and action that contribute to the symbolic repair of migrant memory, aligning our actions with the Sustainable Development Goals of the 2030 Agenda."
+		},
+		"values": {
+			"title": "Values",
+			"description": "Our fundamental values are the preservation of identity memory, respect for cultural diversity, promotion of intergenerational dialogue, building community support networks, denouncing violence and discrimination, and commitment to transparency and sustainability."
+		},
+		"history": {
+			"title": "Our History",
+			"description": "ORIGINA was established as a non-profit association with the purpose of preserving and transmitting the identity memory of migrant children, recognizing the fundamental role of migrant women as cultural agents and caregivers of memory. We work from the Canary Islands with a participatory and community approach, developing projects that strengthen positive roots and belonging from childhood."
+		}
+	},
+	"contact": {
+		"title": "Contact us",
+		"subtitle": "We are here to help you. Send us a message and we will respond as soon as possible.",
+		"name": "Name",
+		"email": "Email",
+		"subject": "Subject",
+		"message": "Message",
+		"send": "Send",
+		"donate": "I want to donate",
+		"info": "Request information",
+		"other": "Other",
+		"placeholder": {
+			"name": "Your name",
+			"email": "your@email.com",
+			"subject": "Select a subject",
+			"message": "Write your message here..."
+		}
+	},
+	"footer": {
+		"rights": "All rights reserved",
+		"follow": "Follow us",
+		"mission": "Mission",
+		"contact": "Contact",
+		"donate": "Donate"
+	},
+	"carousel": {
+		"next": "Next",
+		"prev": "Previous"
+	}
+}
+
