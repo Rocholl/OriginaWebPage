@@ -64,23 +64,41 @@
 
 <div class="pt-8">
 	<!-- Hero Section -->
-	<section class="text-center py-12 sm:py-16 md:py-20 bg-primary text-white mb-8 md:mb-12">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6">
-			<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 md:mb-6 font-bold leading-tight">
-				{$_('home.title')}
-			</h1>
-			<p class="text-base sm:text-lg md:text-xl lg:text-2xl opacity-90 mb-6 md:mb-8 max-w-3xl mx-auto px-2">
-				{$_('home.subtitle')}
-			</p>
-			<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+	<section class="relative text-center py-16 sm:py-20 md:py-28 lg:py-32 bg-gradient-to-br from-primary via-primary to-secondary text-white mb-8 md:mb-12 overflow-hidden">
+		<!-- Decorative elements -->
+		<div class="absolute inset-0 opacity-10">
+			<div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+			<div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+			<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+		</div>
+		
+		<div class="relative max-w-7xl mx-auto px-4 sm:px-6 z-10">
+			<div class="mb-6 sm:mb-8 animate-fade-in">
+				<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 md:mb-8 font-bold leading-tight drop-shadow-lg">
+					{$_('home.title')}
+				</h1>
+			</div>
+			<div class="mb-8 sm:mb-10 md:mb-12 animate-fade-in-delay">
+				<p class="text-lg sm:text-xl md:text-2xl lg:text-3xl opacity-95 mb-8 max-w-4xl mx-auto px-2 leading-relaxed font-light">
+					{$_('home.subtitle')}
+				</p>
+			</div>
+			<div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 animate-fade-in-delay-2">
 				<a
 					href="/work-in-progress"
-					class="bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2 justify-center text-sm sm:text-base"
+					class="group bg-white text-primary px-8 sm:px-10 py-4 sm:py-5 rounded-full font-bold hover:bg-gray-50 hover:scale-105 transition-all duration-300 inline-flex items-center gap-3 justify-center text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
 				>
-					<Heart size={18} class="sm:w-5 sm:h-5" />
-					{$_('home.help.donate')}
+					<Heart size={20} class="sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
+					<span>{$_('home.help.donate')}</span>
 				</a>
 			</div>
+		</div>
+		
+		<!-- Wave separator -->
+		<div class="absolute bottom-0 left-0 right-0">
+			<svg class="w-full h-12 sm:h-16 md:h-20 text-beige" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="currentColor">
+				<path d="M0,0 C150,80 350,80 600,40 C850,0 1050,0 1200,40 L1200,120 L0,120 Z"></path>
+			</svg>
 		</div>
 	</section>
 	
