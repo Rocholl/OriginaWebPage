@@ -5,8 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		color-scheme: light;
+	}
+	
 	body {
 		@apply text-dark-800 bg-beige;
+		background-color: #f5f5dc;
+		color-scheme: light;
 	}
 }
 

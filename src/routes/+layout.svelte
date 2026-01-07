@@ -5,6 +5,11 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+	<meta name="color-scheme" content="light" />
+	<meta name="theme-color" content="#ffffff" />
+</svelte:head>
+
 <Header />
 <main>
 	<slot />
