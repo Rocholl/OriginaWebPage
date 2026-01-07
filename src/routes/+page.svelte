@@ -7,19 +7,19 @@
 	
 	const carouselImages = [
 		{
-			src: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=600&fit=crop',
+			src: 'nqm.jpg',
 			alt: 'Memoria e infancia migrante',
 			title: 'Preservando la memoria identitaria',
 			description: 'Trabajamos para cuidar y transmitir la memoria de la infancia migrante'
 		},
 		{
-			src: 'https://images.unsplash.com/photo-1509099836639-18ba1793926d?w=1200&h=600&fit=crop',
+			src: 'carroussel-2.jpg',
 			alt: 'Mujeres migrantes como agentes culturales',
 			title: 'Visibilizando la historia de las mujeres migrantes',
 			description: 'Reconociendo su papel como cuidadoras y sostenedoras de la memoria'
 		},
 		{
-			src: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&h=600&fit=crop',
+			src: 'carroussel-1.png',
 			alt: 'Diversidad cultural y arraigo positivo',
 			title: 'Fomentando el arraigo positivo desde la infancia',
 			description: 'Promovemos la diversidad cultural y el diálogo intergeneracional'
@@ -62,7 +62,7 @@
 	<title>{$_('home.title')} - Origina</title>
 </svelte:head>
 
-<div class="pt-8">
+<div>
 	<!-- Hero Section -->
 	<section class="relative text-center py-16 sm:py-20 md:py-28 lg:py-32 bg-gradient-to-br from-primary via-primary to-secondary text-white mb-8 md:mb-12 overflow-hidden">
 		<!-- Decorative elements -->
