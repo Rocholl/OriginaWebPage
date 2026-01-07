@@ -9,6 +9,7 @@ COPY package*.json ./
 # Install dependencies
 RUN npm ci
 
+
 # Copy source code
 COPY . .
 
@@ -47,5 +48,5 @@ ENV PORT=3000
 ENV HOST=0.0.0.0
 
 # Start the application
-CMD ["node", "build"]
+CMD ["node", "build/index.js"]
 
