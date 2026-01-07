@@ -3,6 +3,7 @@
 		"home": "Home",
 		"about": "About us",
 		"projects": "Projects",
+		"workshops": "Workshops",
 		"contact": "Contact us",
 		"donate": "Donate"
 	},
@@ -93,6 +94,189 @@
 	"carousel": {
 		"next": "Next",
 		"prev": "Previous"
+	},
+	"projects": {
+		"title": "Our Projects",
+		"subtitle": "Learn about our projects dedicated to preserving the identity memory of migrant children and strengthening their positive roots",
+		"back": "Back to projects",
+		"collaborate": "Collaborate with this project",
+		"viewDetails": "View details",
+		"items": [
+			{
+				"id": 1,
+				"title": "Community We Who Migrate (NQM)",
+				"description": "First Digital Living Memory Archive of the Paraguayan migration process: a collective space that brings together voices, bodies and stories that were historically silenced. It is not a static repository, it is a memory in motion that is updated with each testimony. A tool for dignification, transmission and future built by migrants themselves.",
+				"fullDescription": "Community We Who Migrate was born as an initiative promoted by the NGO Origina Memory and Childhood in Movement, founded by Ana Paniagua T., from a trajectory committed to memory, childhood, identity and community processes. NQM is built from the real and collective experience of migrant women who sustain lives, families, work and communities in contexts of uprooting, inequality and silencing. It is not an assistance project. It is a project of conscious empowerment, living memory and collective action.",
+				"mission": "Accompany, strengthen and make visible migrant women.",
+				"vision": "Transform the migrant experience into an engine of social change.",
+				"values": ["Dignity", "Memory", "Community", "Social justice", "Conscious care"],
+				"methodology": "LAS 8 T Method – NQM",
+				"activities": [
+					"Meeting and dialogue spaces",
+					"Empowerment workshops",
+					"Community activities",
+					"Training and capacity building",
+					"Visibility actions"
+				],
+				"beneficiaries": "Migrant women",
+				"location": "Spain",
+				"status": "Active",
+				"scope": "Migrant women (educational, social, cultural and community)",
+				"founder": "Ana Paniagua T.",
+				"organization": "NGO Origina Memory and Childhood in Movement"
+			},
+			{
+				"id": 2,
+				"title": "Migrant Doula Course",
+				"description": "Course to train conscious, culturally sensitive companions with a human rights approach, capable of accompanying births and migration processes with awareness, rights and community.",
+				"fullDescription": "Migrant women go through processes of motherhood, childbirth and parenting in contexts of uprooting, language barriers, cultural clashes and, in many cases, violation of rights. The Migrant Doula Course was born to train conscious, culturally sensitive companions with a human rights approach. The course uses popular education methodology, experiential approach, real testimonies, reflective and practical work.",
+				"mission": "Train doulas with a migrant perspective capable of accompanying women and families in migration contexts in an ethical, empathetic and professional manner.",
+				"vision": "Accompany births and migration processes with awareness, rights and community.",
+				"values": ["Awareness", "Human rights", "Community", "Interculturality", "Empathy"],
+				"methodology": "Popular education, experiential approach, real testimonies, reflective and practical work.",
+				"objectives": [
+					"Understand the migration experience and its emotional and bodily impact",
+					"Incorporate intercultural and gender approach",
+					"Provide practical tools for prenatal, birth and postpartum accompaniment",
+					"Strengthen community support networks"
+				],
+				"contents": [
+					"Migration, body and motherhood",
+					"Role of the migrant doula",
+					"Reproductive and human rights",
+					"Interculturality and communication",
+					"Emotional accompaniment",
+					"Support network and self-care",
+					"Community practices",
+					"Final accompaniment project"
+				],
+				"activities": [
+					"Online course with live meetings",
+					"Downloadable materials",
+					"Community accompaniment",
+					"Reflective and practical work",
+					"Final accompaniment project"
+				],
+				"beneficiaries": "Migrant women, community activists, birth companions, educators, caregivers and people interested in respectful accompaniment",
+				"location": "Online (with live meetings)",
+				"status": "Coming soon",
+				"duration": "8 weeks (flexible according to edition)",
+				"modality": "Online course with live meetings, downloadable materials and community accompaniment",
+				"certification": "Participation certificate issued by Origina – Memory and Childhood in Movement",
+				"founder": "Ana Paniagua T.",
+				"organization": "NGO Origina – Memory and Childhood in Movement",
+				"project": "We Who Migrate (NQM)"
+			}
+		],
+		"detail": {
+			"mission": "Mission",
+			"vision": "Vision",
+			"values": "Values",
+			"methodology": "Methodology",
+			"location": "Location",
+			"beneficiaries": "Beneficiaries",
+			"scope": "Scope",
+			"objectives": "Specific objectives",
+			"contents": "Main contents",
+			"courseInfo": "Course information",
+			"duration": "Duration",
+			"modality": "Modality",
+			"certification": "Certification",
+			"projectInfo": "Project information",
+			"organization": "Promoting entity",
+			"founder": "Founder and director",
+			"project": "Project",
+			"activities": "Main activities"
+		},
+		"cta": {
+			"title": "Do you want to collaborate with our projects?",
+			"description": "Your support makes it possible for these projects to continue transforming lives and preserving the memory of migrant children",
+			"button": "Make a donation"
+		}
+	},
+	"workshops": {
+		"title": "Workshops",
+		"subtitle": "Creative spaces to strengthen identity memory",
+		"description": "Our workshops are designed to accompany migrant children and their families in strengthening their cultural and emotional identity. Each workshop incorporates mutual care practices, emotional sustainability and respect for cultural diversity.",
+		"forChildren": {
+			"title": "Workshops for Migrant Children",
+			"subtitle": "Safe spaces for creative expression and memory",
+			"workshops": [
+				{
+					"title": "Narrative Photography and Visual Memory",
+					"description": "Workshop where children and adolescents learn to tell their stories through photography, creating a visual archive of their migrant memory and strengthening their cultural identity.",
+					"icon": "camera"
+				},
+				{
+					"title": "Identity Embroidery and Cultural Symbols",
+					"description": "Through embroidery, participants express their cultural identity, creating pieces that represent their roots, traditions and family memory.",
+					"icon": "needle"
+				},
+				{
+					"title": "Word Circles",
+					"description": "Intergenerational dialogue spaces where family stories, migration experiences and community knowledge are shared, strengthening bonds between generations.",
+					"icon": "users"
+				},
+				{
+					"title": "Cooperative Games and Belonging",
+					"description": "Playful activities that promote teamwork, cooperation and sense of belonging to the community, creating positive bonds between participants.",
+					"icon": "gamepad"
+				},
+				{
+					"title": "Migrant Stories and Community Narrators",
+					"description": "Workshop for creating and narrating stories where migration stories are made visible, strengthening collective memory and the role of women as community narrators.",
+					"icon": "book"
+				}
+			]
+		},
+		"training": {
+			"title": "Training and Awareness",
+			"subtitle": "Training for professionals and community agents",
+			"workshops": [
+				{
+					"title": "Training for Community Agents",
+					"description": "Training program aimed at people working in migrant communities, providing tools for emotional and cultural accompaniment.",
+					"icon": "graduation"
+				},
+				{
+					"title": "Awareness in Educational Centers",
+					"description": "Workshops and talks in schools and institutes to promote cultural diversity, respect and inclusion of migrant children in the educational field.",
+					"icon": "school"
+				},
+				{
+					"title": "Workshops for Migration Professionals",
+					"description": "Specialized training for professionals working with migrant populations, focused on identity memory, children's rights and intercultural approach.",
+					"icon": "briefcase"
+				}
+			]
+		},
+		"sustainability": {
+			"title": "Sustainability Approach",
+			"description": "All our workshops incorporate emotional and ecological sustainability practices:",
+			"items": [
+				"Spaces of silence, pause and deep listening",
+				"Mutual care practices in all workshops",
+				"Responsible use of materials",
+				"Creative reuse and circular economy",
+				"Outdoor activities that connect nature and memory"
+			]
+		},
+		"beneficiaries": {
+			"title": "Who are these workshops for?",
+			"items": [
+				"Migrant children and adolescents",
+				"Children of migrants born in Spain",
+				"Migrant families",
+				"Migrant women",
+				"Community agents and educators",
+				"Migration professionals"
+			]
+		},
+		"contact": {
+			"title": "Interested in our workshops?",
+			"description": "Contact us for more information about dates, schedules and how to participate",
+			"button": "Contact"
+		}
 	}
 }
 

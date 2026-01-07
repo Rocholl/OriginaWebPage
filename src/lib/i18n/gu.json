@@ -1,0 +1,362 @@
+{
+	"header": {
+		"home": "Ñepyrũ",
+		"about": "Ñande rehegua",
+		"projects": "Tembiapo",
+		"workshops": "Atyguasu",
+		"contact": "Memoria Viva formulario",
+		"donate": "Me'ẽ"
+	},
+	"home": {
+		"title": "Mandu'a, mitãrusu ha ñemongu'e oñemoambueva ko'agã",
+		"subtitle": "Roñangareko ñemongu'e rehegua ñangareko, ñe'ẽ ha tekohápe rupi. Rojapo tenda hekorãva ojekuaáva tembiasakuéra, oñangarekóva mitãrusúpe ha kuñakarai ñemongu'e omyakãva moambue.",
+		"mission": {
+			"title": "Ñande rembipota",
+			"description": "Roñongatu, roñangareko ha rohasávo mitãrusu ñemongu'e mandu'a rekove. Rojechauka ha roñehenondeve kuñakarai ñemongu'e tembiasakuéra tembikuaahára ramo, ñangarekohára ha mandu'a ñangarekohára ramo. Rojepyme'ẽ tenda hekorãva, tekohápe ha teko rupi oikoporãva oñeñandu, oñeñandu ha ñemongu'e ñepyrũ porã mitãrusu guive."
+		},
+		"vision": {
+			"title": "Ñande jehecha",
+			"description": "Rojapo teko iñambuéva, ñe'ẽ oñomoirũva avakuéra pa'ũme ha tekohápe oñepyrũva. Rojapo ñangareko ñe'ẽ, mbo'e ha tembiapo oipytyvõva ñemongu'e mandu'a ñemyatyrõ rehegua, roñe'ẽva opaichagua jeja, pe'ã ha ñembotavy mitãrusu ñemongu'e ha imboriahápe g̃uara."
+		},
+		"values": {
+			"title": "Ñande teko",
+			"transparency": "Mandu'a ha rekove",
+			"transparencyDesc": "Roñongatu ha rohasávo mitãrusu ñemongu'e mandu'a rekove iñemoñepyrũha ramo",
+			"commitment": "Teko iñambuéva",
+			"commitmentDesc": "Rojapo ñe'ẽ oñomoirũva avakuéra pa'ũme ha tekohápe oñepyrũva teko iñambuéva reheguápe",
+			"solidarity": "Ñeñandu ha ñemongu'e",
+			"solidarityDesc": "Rojapo ñemongu'e porã ha tekoha mitãrusu guive, rojapóvo tenda hekorãva oñeñandu rehegua"
+		},
+		"projects": {
+			"title": "Ñande tembiapo",
+			"readMore": "Eikuaave"
+		},
+		"impact": {
+			"title": "Ñande jepyso",
+			"people": "Tapicha oñepytyvõva",
+			"projects": "Tembiapo oikóva",
+			"communities": "Tekoha oñeguahẽva",
+			"years": "Ary tembiapo"
+		},
+		"help": {
+			"title": "Mba'éichapa ikatu reipytyvõ?",
+			"donate": "Me'ẽ",
+			"donateDesc": "Nde pytyvõ omoĩporãva ñande tembiapo",
+			"spread": "Moherakuã",
+			"spreadDesc": "Eme'ẽ nde tekohápe ñande rembipota"
+		}
+	},
+	"about": {
+		"title": "Origina rehegua",
+		"subtitle": "ORIGINA – Mitãrusu ha Mandu'a Ñemongu'epe",
+		"presentation": {
+			"title": "Jehechauka",
+			"description": "ORIGINA – Mitãrusu ha Mandu'a Ñemongu'epe ha'e atyguasu viru'ỹgua oñepyrũva Las Palmas de Gran Canaria-pe oñangarekóvo, oñembojevy ha oñehenondeve mitãrusu paraguái ha latinoamérica ñemongu'e mandu'a rekove, ha imboriahápe g̃uara, oikehápe mitãrusu España-pe térã ñemongu'e rupi oñepyrũva.",
+			"description2": "Roiko atyguasu roñangarekóva, roñangarekóva ha roñehenondevéva tembiasakuéra oñangarekóva ñande mitãrusúpe. ORIGINA oñepyrũ sy ñemongu'e, ñangarekohára ha mboriahápe g̃uara ojeroviava mandu'a ha'e teko tee."
+		},
+		"legal": {
+			"title": "Tekoteẽ ha ñemboheraguapy",
+			"name": "Téra tuichakue",
+			"nameValue": "ORIGINA – Mitãrusu ha Mandu'a Ñemongu'epe",
+			"nature": "Tekoteẽ rehegua",
+			"natureValue": "Atyguasu viru'ỹgua",
+			"registry": "Canarias Atyguasu Ñemboheraguapy",
+			"registryNumber": "Nº 28063",
+			"resolution": "Ñemboheraguapy resolución",
+			"resolutionDate": "21 jasypateĩ 2025",
+			"scope": "Tendaguasu",
+			"scopeValue": "Canarias, España ha tetãnguéra pa'ũme oñepyrũva"
+		},
+		"mission": {
+			"title": "Rembipota",
+			"description": "Roñangareko mitãrusu ñemongu'e ha imboriahápe g̃uara iñemoñepyrũha ha oñeñandu rehegua oñehenondeve rupi, mbo'e, tembiapópe ha tekohápe rupi tembiapo rupi."
+		},
+		"vision": {
+			"title": "Jehecha",
+			"description": "Roiko atyguasu Canarias ha España-pe ñemongu'e mandu'a ñangarekópe, rojapo tekohápe oñepyrũ, oñeñandu hekorã, mitãrusu teko tee ha tapicha hekorã."
+		},
+		"values": {
+			"title": "Teko",
+			"items": ["Rekove", "Mitãrusu", "Mandu'a", "Tekoha", "Iñambuéva", "Teko ñangareko", "Tapicha teko tee", "Oñeñandu hekorã", "Avakuéra pa'ũme ñangareko"]
+		},
+		"objectives": {
+			"title": "Rembipota tuichakue",
+			"items": [
+				"Roñongatu ha roñehenondeve mitã, kuñataĩ ha mitãrusu ñemongu'e mandu'a rekove",
+				"Rojapo tenda hekorãva oñeñandu, tembiapópe ha teko rehegua",
+				"Rojapo tekohápe oñepyrũ, oñomoirũ ha ñemongu'e porã",
+				"Rojapo mbo'e tembiapo teko iñambuéva reheguápe",
+				"Rojepyso opaichagua jeja, ñembotavy, ñemondýi térã jeja mitãrusu ñemongu'e rehegua",
+				"Rojapysaka, rojechauka ha roñehenondeve tembiasakuéra, ñe'ẽkuéra ha ñemongu'e tembiapo"
+			]
+		},
+		"areas": {
+			"title": "Tembiapo tenda",
+			"items": [
+				"Mitãrusu ha Mbo'e Teko Iñambuéva",
+				"Ñangareko oñeñandu ha tekohápe",
+				"Ñemongu'e mandu'a ha archivo oñeñandu rehegua",
+				"Tembiapópe, tembiasakuéra ha tembiapo oñemoñepyrũva",
+				"Mboriaha ñemongu'e ha ñangareko atyguasu",
+				"Mbo'e ha tekohápe oñeñandu",
+				"Joja, iñambuéva ha tapicha teko tee"
+			]
+		},
+		"team": {
+			"title": "Atyguasu ha Atyguasu Reko",
+			"board": "Atyguasu Tuichakue",
+			"president": "Mburuvichavete",
+			"secretary": "Ha'ãnga",
+			"treasurer": "Viru ñangarekohára",
+			"vocal": "Ñe'ẽhára"
+		},
+		"beneficiaries": {
+			"title": "Tapicha oñepytyvõva",
+			"items": [
+				"Mitã, kuñataĩ ha mitãrusu ñemongu'e",
+				"Mitãrusu ñemongu'e España-pe oñepyrũva",
+				"Mboriaha ñemongu'e",
+				"Kuñakarai ñemongu'e",
+				"Tekoha oñeñandu térã oñembotavy rehegua",
+				"Mbo'e tenda",
+				"Atyguasu ha tekohápe atyguasu"
+			]
+		},
+		"funding": {
+			"title": "Viru Reko ha Viru Pytyvõ",
+			"items": [
+				"Viru he'ise'ỹva (5€/jasy guive)",
+				"Me'ẽ ñemiguáva",
+				"Tetã pytyvõ (Cabildo, Municipalidad, Canarias Gobierno, UE)",
+				"Tembiapo viru ñangarekohára",
+				"Tembiapo tetãnguéra ha tetãnguéra pa'ũme pytyvõva"
+			],
+			"transparency": "Roñehenondeve heko, viru porã jeporu ha ary tembiapo mandu'a."
+		},
+		"sustainability": {
+			"title": "Oñeñandu ha Tekoha Hekorã",
+			"description": "ORIGINA oike capítulo específico hekorã rehegua oikehápe:",
+			"items": [
+				"Mitãrusu ñemongu'e oñeñandu hekorã rehegua",
+				"Tenda kirirĩ, pytu ha ñesũ porã",
+				"Ñangareko oñomoirũva opaite atyguasúpe",
+				"Tembiapo porã jeporu",
+				"Jeporu pyahu ha viru jeregua",
+				"Tembiapo okapegua oñomoirũva tekoha ha mandu'a"
+			]
+		}
+	},
+	"contact": {
+		"title": "Eñe'ẽ ñandéve",
+		"subtitle": "Rojepytyvõ. Emondo ñe'ẽ ha roñembohovái pya'eve.",
+		"name": "Téra",
+		"email": "Email",
+		"subject": "Mba'e",
+		"message": "Ñe'ẽ",
+		"send": "Mondo",
+		"donate": "Aipota me'ẽ",
+		"info": "Eporandu marandu",
+		"other": "Ambue",
+		"placeholder": {
+			"name": "Nde réra",
+			"email": "nde@email.com",
+			"subject": "Eiporavo mba'e",
+			"message": "Ehai nde ñe'ẽ ko'ápe..."
+		}
+	},
+	"footer": {
+		"rights": "Opavavépe teko tee",
+		"follow": "Eñemongu'e",
+		"mission": "Rembipota",
+		"contact": "Ñe'ẽ",
+		"donate": "Me'ẽ"
+	},
+	"carousel": {
+		"next": "Upeigua",
+		"prev": "Mboyvegua"
+	},
+	"workshops": {
+		"title": "Atyguasu",
+		"subtitle": "Tenda tembiapo oñehenondevéva mandu'a rekove",
+		"description": "Ñande atyguasu oñemoñepyrũva roñangarekóvo mitãrusu ñemongu'e ha imboriahápe g̃uara iñemoñepyrũha ha oñeñandu rehegua oñehenondeve rupi. Opaite atyguasu oike ñangareko oñomoirũva, oñeñandu hekorã ha teko iñambuéva rehegua ñangareko.",
+		"forChildren": {
+			"title": "Atyguasu Mitãrusu Ñemongu'e Pegua",
+			"subtitle": "Tenda hekorãva tembiapo ha mandu'a rehegua",
+			"workshops": [
+				{
+					"title": "Ta'ãnga Tembiasakuéra ha Mandu'a Ta'ãnga",
+					"description": "Atyguasu mitã, kuñataĩ ha mitãrusu oñembokatupyryva tembiasakuéra ta'ãnga rupi, rojapóvo archivo ta'ãnga ñemongu'e mandu'a rehegua ha roñehenondevévo iñemoñepyrũha teko.",
+					"icon": "camera"
+				},
+				{
+					"title": "Ñemongu'e Rekove ha Teko He'ise",
+					"description": "Ñemongu'e rupi, oñepyrũva ohechauka iñemoñepyrũha teko, rojapóvo tembiapo ohechaukáva iñepyrũ, teko ha mboriaha mandu'a.",
+					"icon": "needle"
+				},
+				{
+					"title": "Ñe'ẽ Atyguasu",
+					"description": "Tenda ñe'ẽ oñomoirũva avakuéra pa'ũme oñe'ẽva mboriaha tembiasakuéra, ñemongu'e tembiapo ha tekohápe marandu, roñehenondevévo oñomoirũva avakuéra pa'ũme.",
+					"icon": "users"
+				},
+				{
+					"title": "Ñembosarái Oñomoirũva ha Tekoha",
+					"description": "Tembiapo ñembosarái oñehenondevéva atyguasu tembiapo, oñomoirũ ha tekoha oñeñandu, rojapóvo oñomoirũ porã oñepyrũva pa'ũme.",
+					"icon": "gamepad"
+				},
+				{
+					"title": "Tembiasakuéra Ñemongu'e ha Ñe'ẽhára Tekohápe",
+					"description": "Atyguasu tembiapo ha tembiasakuéra ñe'ẽ rehegua oñechaukáva tembiasakuéra ñemongu'e, roñehenondevévo atyguasu mandu'a ha kuñakarai rembiapo ñe'ẽhára tekohápe ramo.",
+					"icon": "book"
+				}
+			]
+		},
+		"training": {
+			"title": "Mbo'e ha Tekohápe Ñeñandu",
+			"subtitle": "Mbo'e tembikuaahára ha tekohápe tembikuaahára pegua",
+			"workshops": [
+				{
+					"title": "Mbo'e Tekohápe Tembikuaahára Pegua",
+					"description": "Mbo'e tembiapo oñepyrũva tapichápe oñemba'apóva tekohápe ñemongu'e, rojepyme'ẽva tembiapo ñangareko oñeñandu ha teko rehegua.",
+					"icon": "graduation"
+				},
+				{
+					"title": "Tekohápe Ñeñandu Mbo'e Tenda",
+					"description": "Atyguasu ha ñe'ẽ mbo'e tenda ha mbo'ehaokuérape oñehenondevéva teko iñambuéva, ñangareko ha mitãrusu ñemongu'e oike mbo'e reheguápe.",
+					"icon": "school"
+				},
+				{
+					"title": "Atyguasu Ñemongu'e Tembikuaahára Pegua",
+					"description": "Mbo'e oñemomba'éva tembikuaahárape oñemba'apóva tapicha ñemongu'e rehegua, oñemomba'éva mandu'a rekove, mitãrusu teko tee ha teko iñambuéva rehegua.",
+					"icon": "briefcase"
+				}
+			]
+		},
+		"sustainability": {
+			"title": "Hekorã Rehegua",
+			"description": "Opaite ñande atyguasu oike tembiapo oñeñandu ha tekoha hekorã rehegua:",
+			"items": [
+				"Tenda kirirĩ, pytu ha ñesũ porã",
+				"Ñangareko oñomoirũva opaite atyguasúpe",
+				"Tembiapo porã jeporu",
+				"Jeporu pyahu ha viru jeregua",
+				"Tembiapo okapegua oñomoirũva tekoha ha mandu'a"
+			]
+		},
+		"beneficiaries": {
+			"title": "Máva pegua ko'ã atyguasu?",
+			"items": [
+				"Mitã, kuñataĩ ha mitãrusu ñemongu'e",
+				"Mitãrusu ñemongu'e España-pe oñepyrũva",
+				"Mboriaha ñemongu'e",
+				"Kuñakarai ñemongu'e",
+				"Tekohápe tembikuaahára ha mbo'ehára",
+				"Ñemongu'e tembikuaahára"
+			]
+		},
+		"contact": {
+			"title": "Einteresápa ñande atyguasúpe?",
+			"description": "Eñe'ẽ ñandéve maranduve arange, ára ha mba'éichapa ikatu reñepyrũ",
+			"button": "Ñe'ẽ"
+		}
+	},
+	"projects": {
+		"title": "Ñande tembiapo",
+		"subtitle": "Eikuaa ñande tembiapo oñongatúva mitãrusu ñemongu'e mandu'a rekove ha oñehenondevéva iñemongu'e porã",
+		"back": "Ejevy tembiapo",
+		"collaborate": "Eipytyvõ ko tembiapo",
+		"viewDetails": "Ehecha mba'éichapa",
+		"items": [
+			{
+				"id": 1,
+				"title": "Tekoha Ñande Ñemongu'e (NQM)",
+				"description": "Ñepyrũha Mandu'a Viva Digital Archivo paraguái ñemongu'e rehegua: tenda atyguasu oñomoirũva ñe'ẽ, rete ha tembiasakuéra oñembotýva tembiasakuépe. Ndojapói archivo oĩva, ha'e mandu'a oñemongu'e rupi oñembohekopyahu tembiasakuéra rupi. Tembiapo teko, hasa ha ko'ẽgua oñepyrũva ñemongu'e rupi.",
+				"fullDescription": "Tekoha Ñande Ñemongu'e oñepyrũ atyguasu Origina Mandu'a ha Mitãrusu Ñemongu'epe rupi, oñepyrũva Ana Paniagua T. rupi, tembiasakuéra, mitãrusu, rekove ha tekohápe tembiapo reheguápe. NQM oñepyrũ tembiapo ha atyguasu kuñakarai ñemongu'e rehegua oñangarekóva tekove, mboriaha, tembiapo ha tekoha oñeñandu, jeja ha ñemboty reheguápe. Ndojapói tembiapo pytyvõha. Ha'e tembiapo oñehenondeve, mandu'a oikóva ha atyguasu tembiapo.",
+				"mission": "Roñangareko, roñehenondeve ha rojechauka kuñakarai ñemongu'e.",
+				"vision": "Roñemoambue ñemongu'e tembiapo tekohápe moambue rehegua.",
+				"values": ["Teko", "Mandu'a", "Tekoha", "Tekohápe teko", "Ñangareko oñeñandu"],
+				"methodology": "LAS 8 T Reko – NQM",
+				"activities": [
+					"Tenda oñomoirũ ha ñe'ẽ",
+					"Atyguasu oñehenondeve",
+					"Tekohápe tembiapo",
+					"Mbo'e ha mbo'eha",
+					"Tembiapo oñechaukáva"
+				],
+				"beneficiaries": "Kuñakarai ñemongu'e",
+				"location": "España",
+				"status": "Oikóva",
+				"scope": "Kuñakarai ñemongu'e (mbo'e, tekohápe, teko ha tekohápe)",
+				"founder": "Ana Paniagua T.",
+				"organization": "Atyguasu Origina Mandu'a ha Mitãrusu Ñemongu'epe"
+			},
+			{
+				"id": 2,
+				"title": "Doula Ñemongu'e Mbo'e",
+				"description": "Mbo'e oñembokatupyryva ñangarekohára oñeñandu, teko reheguápe ha tapicha teko tee reheguápe, ikatúva ñangarekóvo ñepyrũ ha ñemongu'e rehegua oñeñandu, teko tee ha tekohápe rupi.",
+				"fullDescription": "Kuñakarai ñemongu'e oñemba'apo sy rehegua, ñepyrũ ha mitã ñangareko oñeñandu, ñe'ẽ jeja, teko jeja ha, heta jave, teko tee jeja reheguápe. Doula Ñemongu'e Mbo'e oñepyrũ oñembokatupyryva ñangarekohára oñeñandu, teko reheguápe ha tapicha teko tee reheguápe. Mbo'e oiporu mbo'e tekohápe, tembiapo rehegua, tembiasakuéra añete, tembiapo oñeñandu ha tembiapo rehegua.",
+				"mission": "Rojapo doula ñemongu'e rehegua ikatúva ñangarekóvo kuñakarai ha mboriaha ñemongu'e reheguápe teko, oñeñandu ha tembikuaahára rupi.",
+				"vision": "Roñangareko ñepyrũ ha ñemongu'e rehegua oñeñandu, teko tee ha tekohápe rupi.",
+				"values": ["Ñeñandu", "Tapicha teko tee", "Tekoha", "Teko iñambuéva", "Oñeñandu"],
+				"methodology": "Mbo'e tekohápe, tembiapo rehegua, tembiasakuéra añete, tembiapo oñeñandu ha tembiapo rehegua.",
+				"objectives": [
+					"Eikuaa ñemongu'e tembiapo ha iñepyso oñeñandu ha rete rehegua",
+					"Oike teko iñambuéva ha kuñakarai rehegua",
+					"Eme'ẽ tembiapo rehegua ñangareko ñepyrũ mboyve, ñepyrũ ha ñepyrũ rire",
+					"Roñehenondeve tekohápe ñangareko"
+				],
+				"contents": [
+					"Ñemongu'e, rete ha sy rehegua",
+					"Doula ñemongu'e rembiapo",
+					"Teko tee ñepyrũ ha tapicha rehegua",
+					"Teko iñambuéva ha ñe'ẽ",
+					"Ñangareko oñeñandu",
+					"Ñangareko ha ñangareko rehegua",
+					"Tekohápe tembiapo",
+					"Ñepyrũha tembiapo ñangareko"
+				],
+				"activities": [
+					"Mbo'e online oñomoirũva añete rupi",
+					"Tembiapo ikatu emboguejy",
+					"Tekohápe ñangareko",
+					"Tembiapo oñeñandu ha tembiapo rehegua",
+					"Ñepyrũha tembiapo ñangareko"
+				],
+				"beneficiaries": "Kuñakarai ñemongu'e, tekohápe tembikuaahára, ñepyrũ ñangarekohára, mbo'ehára, ñangarekohára ha tapicha interesáva ñangareko reheguápe",
+				"location": "Online (oñomoirũva añete rupi)",
+				"status": "Upe rire",
+				"duration": "8 arapokõindy (oñemoambuéva edición rupi)",
+				"modality": "Mbo'e online oñomoirũva añete rupi, tembiapo ikatu emboguejy ha tekohápe ñangareko",
+				"certification": "Certificado oñepyrũva Origina – Mandu'a ha Mitãrusu Ñemongu'epe rupi",
+				"founder": "Ana Paniagua T.",
+				"organization": "Atyguasu Origina – Mandu'a ha Mitãrusu Ñemongu'epe",
+				"project": "Ñande Ñemongu'e (NQM)"
+			}
+		],
+		"detail": {
+			"mission": "Rembipota",
+			"vision": "Jehecha",
+			"values": "Teko",
+			"methodology": "Reko",
+			"location": "Tenda",
+			"beneficiaries": "Oñepytyvõva",
+			"scope": "Tendaguasu",
+			"objectives": "Rembipota oñemomba'éva",
+			"contents": "Mba'e tuichakue",
+			"courseInfo": "Mbo'e marandu",
+			"duration": "Arekue",
+			"modality": "Reko",
+			"certification": "Certificación",
+			"projectInfo": "Tembiapo marandu",
+			"organization": "Atyguasu oñehenondeve",
+			"founder": "Oñepyrũha ha myakãhára",
+			"project": "Tembiapo",
+			"activities": "Tembiapo tuichakue"
+		},
+		"cta": {
+			"title": "Eipota reipytyvõ ñande tembiapo?",
+			"description": "Nde pytyvõ omoĩporãva ko'ã tembiapo oku'eve tekove oñemoambue ha mitãrusu ñemongu'e mandu'a oñongatu",
+			"button": "Eme'ẽ"
+		}
+	}
+}
+

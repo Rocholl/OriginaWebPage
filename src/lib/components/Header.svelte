@@ -8,8 +8,26 @@
 	let mobileMenuOpen = $state(false);
 	
 	function toggleLocale() {
-		currentLocale = currentLocale === 'es' ? 'en' : 'es';
+		if (currentLocale === 'es') {
+			currentLocale = 'en';
+		} else if (currentLocale === 'en') {
+			currentLocale = 'gu';
+		} else {
+			currentLocale = 'es';
+		}
 		$locale = currentLocale;
+	}
+	
+	function getLocaleLabel() {
+		if (currentLocale === 'es') return 'EN';
+		if (currentLocale === 'en') return 'GN';
+		return 'ES';
+	}
+	
+	function getFlagClass() {
+		if (currentLocale === 'es') return 'fi fi-es';
+		if (currentLocale === 'en') return 'fi fi-us';
+		return 'fi fi-py'; // Paraguay para Guaraní
 	}
 	
 	function toggleMobileMenu() {
@@ -110,8 +128,8 @@
 					class="bg-primary text-white border-none px-3 xl:px-4 py-2 rounded-md font-semibold cursor-pointer hover:bg-secondary transition-colors flex items-center gap-2 text-sm xl:text-base"
 					onclick={() => toggleLocale()}
 				>
-					<Globe size={18} />
-					{currentLocale === 'es' ? 'EN' : 'ES'}
+					<span class={getFlagClass()} style="font-size: 1.2rem;"></span>
+					<span class="hidden xl:inline">{getLocaleLabel()}</span>
 				</button>
 			</div>
 			
@@ -206,8 +224,8 @@
 								closeMobileMenu();
 							}}
 						>
-							<Globe size={20} />
-							{currentLocale === 'es' ? 'EN' : 'ES'}
+							<span class={getFlagClass()} style="font-size: 1.2rem;"></span>
+							{getLocaleLabel()}
 						</button>
 					</li>
 				</ul>

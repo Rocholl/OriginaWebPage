@@ -2,6 +2,7 @@ import { register, init, getLocaleFromNavigator, waitLocale } from 'svelte-i18n'
 
 register('es', () => import('./es.json'));
 register('en', () => import('./en.json'));
+register('gu', () => import('./gu.json'));
 
 // Initialize i18n
 const defaultLocale = typeof window !== 'undefined' ? getLocaleFromNavigator() : 'es';

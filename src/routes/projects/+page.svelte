@@ -3,77 +3,36 @@
 	import { page } from '$app/stores';
 	import { Users, Heart, MapPin, ArrowRight, Target, Eye, Shield, Sparkles, Baby, GraduationCap } from 'lucide-svelte';
 	
-	const projects = [
-		{
-			id: 1,
-			title: 'Comunidad Nosotras las que Migramos (NQM)',
-			description: 'Proyecto social y comunitario sin ánimo de lucro que acompaña, fortalece y visibiliza a las mujeres migrantes, transformando la experiencia migrante en motor de cambio social.',
-			fullDescription: 'Comunidad Nosotras las que Migramos nace como una iniciativa impulsada por la ONG Origina Memoria e Infancia en Movimiento, fundada por Ana Paniagua T., desde una trayectoria comprometida con la memoria, la infancia, la identidad y los procesos comunitarios. NQM se construye a partir de la experiencia real y colectiva de mujeres migrantes que sostienen vidas, familias, trabajos y comunidades en contextos de desarraigo, desigualdad y silenciamiento. No es un proyecto asistencialista. Es un proyecto de empoderamiento consciente, memoria viva y acción colectiva.',
-			image: '/nqm.jpg',
-			icon: Users,
-			mission: 'Acompañar, fortalecer y visibilizar a las mujeres migrantes.',
-			vision: 'Transformar la experiencia migrante en motor de cambio social.',
-			values: ['Dignidad', 'Memoria', 'Comunidad', 'Justicia social', 'Cuidado consciente'],
-			methodology: 'Método LAS 8 T – NQM',
-			activities: [
-				'Espacios de encuentro y diálogo',
-				'Talleres de empoderamiento',
-				'Actividades comunitarias',
-				'Formación y capacitación',
-				'Acciones de visibilización'
-			],
-			beneficiaries: 'Mujeres migrantes',
-			location: 'España – América Latina (con proyección internacional)',
-			status: 'Activo',
-			scope: 'Mujeres migrantes (educativo, social, cultural y comunitario)',
-			founder: 'Ana Paniagua T.',
-			organization: 'ONG Origina Memoria e Infancia en Movimiento'
-		},
-		{
-			id: 2,
-			title: 'Curso Doula Migrante',
-			description: 'Curso para formar acompañantes conscientes, culturalmente sensibles y con enfoque de derechos humanos, capaces de acompañar nacimientos y procesos migratorios con conciencia, derechos y comunidad.',
-			fullDescription: 'Las mujeres migrantes atraviesan procesos de maternidad, parto y crianza en contextos de desarraigo, barreras idiomáticas, choques culturales y, en muchos casos, vulneración de derechos. El Curso Doula Migrante nace para formar acompañantes conscientes, culturalmente sensibles y con enfoque de derechos humanos. El curso utiliza metodología de educación popular, enfoque vivencial, testimonios reales, trabajo reflexivo y práctico.',
-			image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop',
-			icon: Baby,
-			mission: 'Formar doulas con perspectiva migrante capaces de acompañar de manera ética, empática y profesional a mujeres y familias en contextos de migración.',
-			vision: 'Acompañar nacimientos y procesos migratorios con conciencia, derechos y comunidad.',
-			values: ['Conciencia', 'Derechos humanos', 'Comunidad', 'Interculturalidad', 'Empatía'],
-			methodology: 'Educación popular, enfoque vivencial, testimonios reales, trabajo reflexivo y práctico.',
-			objectives: [
-				'Comprender la experiencia migratoria y su impacto emocional y corporal',
-				'Incorporar enfoque intercultural y de género',
-				'Brindar herramientas prácticas de acompañamiento prenatal, parto y posparto',
-				'Fortalecer redes comunitarias de apoyo'
-			],
-			contents: [
-				'Migración, cuerpo y maternidad',
-				'Rol de la doula migrante',
-				'Derechos reproductivos y humanos',
-				'Interculturalidad y comunicación',
-				'Acompañamiento emocional',
-				'Red de apoyo y autocuidado',
-				'Prácticas comunitarias',
-				'Proyecto final de acompañamiento'
-			],
-			activities: [
-				'Curso online con encuentros en directo',
-				'Materiales descargables',
-				'Acompañamiento comunitario',
-				'Trabajo reflexivo y práctico',
-				'Proyecto final de acompañamiento'
-			],
-			beneficiaries: 'Mujeres migrantes, activistas comunitarias, acompañantes de parto, educadoras, cuidadoras y personas interesadas en el acompañamiento respetuoso',
-			location: 'Online (con encuentros en directo)',
-			status: 'Activo',
-			duration: '8 semanas (flexible según edición)',
-			modality: 'Curso online con encuentros en directo, materiales descargables y acompañamiento comunitario',
-			certification: 'Certificado de participación emitido por Origina – Memoria e Infancia en Movimiento',
-			founder: 'Ana Paniagua T.',
-			organization: 'ONG Origina – Memoria e Infancia en Movimiento',
-			project: 'Nosotras las que Migramos (NQM)'
-		}
-	];
+	// Iconos para los proyectos
+	const projectIcons = {
+		1: Users,
+		2: Baby
+	};
+	
+	// Imágenes de los proyectos
+	const projectImages = {
+		1: '/nqm.jpg',
+		2: '/projects-1.png'
+	};
+	
+	// Obtener proyectos desde las traducciones
+	let projects = $derived.by(() => {
+		const projectsData = $_('projects.items');
+		/**
+		 * @type {any[]}
+		 */
+		const projectsArray = Array.isArray(projectsData) ? projectsData : [];
+		return projectsArray.map((project) => ({
+			...project,
+			icon: projectIcons[/** @type {1|2} */ (project.id)],
+			image: projectImages[/** @type {1|2} */ (project.id)] || project.image
+		}));
+	});
+	
+	/**
+	 * @type {any[]}
+	 */
+	let projectsList = $derived(projects);
 	
 	// Leer el ID del proyecto desde la URL
 	let urlProjectId = $derived(() => {
@@ -81,12 +40,12 @@
 		return idParam ? parseInt(idParam, 10) : null;
 	});
 	
-	let selectedProjectId = $state(/** @type {number | null} */ (urlProjectId()));
+	let selectedProjectId = $state(/** @type {number | null} */ (null));
 	
 	// Actualizar cuando cambie la URL
 	$effect(() => {
 		const idFromUrl = urlProjectId();
-		if (idFromUrl && projects.find(p => p.id === idFromUrl)) {
+		if (idFromUrl && projectsList.find((/** @type {any} */ p) => p.id === idFromUrl)) {
 			selectedProjectId = idFromUrl;
 			if (typeof window !== 'undefined') {
 				window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -95,7 +54,7 @@
 	});
 	
 	/**
-	 * @param {number | null} id
+	 * @param {number} id
 	 */
 	function selectProject(id) {
 		selectedProjectId = id;
@@ -117,7 +76,7 @@
 		}
 	}
 	
-	let selectedProject = $derived(projects.find(p => p.id === selectedProjectId) || null);
+	let selectedProject = $derived(projectsList.find((/** @type {any} */ p) => p.id === selectedProjectId) || null);
 </script>
 
 <svelte:head>
@@ -145,7 +104,7 @@
 					class="mb-6 text-primary hover:text-secondary transition-colors flex items-center gap-2 font-semibold"
 				>
 					<ArrowRight size={20} class="rotate-180" />
-					Volver a proyectos
+					{$_('projects.back')}
 				</button>
 				
 				<article class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -188,7 +147,7 @@
 							<div class="bg-primary text-white p-5 rounded-lg">
 								<div class="flex items-center gap-2 mb-3">
 									<Target size={20} />
-									<h3 class="text-xl font-semibold">Misión</h3>
+									<h3 class="text-xl font-semibold">{$_('projects.detail.mission')}</h3>
 								</div>
 								<p class="opacity-95">{project.mission}</p>
 							</div>
@@ -196,7 +155,7 @@
 							<div class="bg-gray-50 p-5 rounded-lg">
 								<div class="flex items-center gap-2 mb-3">
 									<Eye size={20} class="text-primary" />
-									<h3 class="text-xl font-semibold text-dark-800">Visión</h3>
+									<h3 class="text-xl font-semibold text-dark-800">{$_('projects.detail.vision')}</h3>
 								</div>
 								<p class="text-dark-600">{project.vision}</p>
 							</div>
@@ -204,7 +163,7 @@
 							<div class="bg-gray-50 p-5 rounded-lg">
 								<div class="flex items-center gap-2 mb-3">
 									<Shield size={20} class="text-primary" />
-									<h3 class="text-xl font-semibold text-dark-800">Valores</h3>
+									<h3 class="text-xl font-semibold text-dark-800">{$_('projects.detail.values')}</h3>
 								</div>
 								<ul class="space-y-1">
 									{#each project.values as value (value)}
@@ -219,7 +178,7 @@
 							<div class="bg-primary/10 p-6 rounded-lg mb-8">
 								<div class="flex items-center gap-2 mb-3">
 									<Sparkles size={20} class="text-primary" />
-									<h3 class="text-xl font-semibold text-dark-800">Metodología</h3>
+									<h3 class="text-xl font-semibold text-dark-800">{$_('projects.detail.methodology')}</h3>
 								</div>
 								<p class="text-dark-600 text-lg font-medium">{project.methodology}</p>
 							</div>
@@ -229,7 +188,7 @@
 							<div class="bg-beige p-5 rounded-lg">
 								<h3 class="text-xl font-semibold text-dark-800 mb-3 flex items-center gap-2">
 									<MapPin size={20} class="text-primary" />
-									Ubicación
+									{$_('projects.detail.location')}
 								</h3>
 								<p class="text-dark-600">{project.location}</p>
 							</div>
@@ -237,11 +196,11 @@
 							<div class="bg-beige p-5 rounded-lg">
 								<h3 class="text-xl font-semibold text-dark-800 mb-3 flex items-center gap-2">
 									<Users size={20} class="text-primary" />
-									Beneficiarios
+									{$_('projects.detail.beneficiaries')}
 								</h3>
 								<p class="text-dark-600">{project.beneficiaries}</p>
 								{#if project.scope}
-									<p class="text-dark-600 text-sm mt-2 italic">Ámbito: {project.scope}</p>
+									<p class="text-dark-600 text-sm mt-2 italic">{$_('projects.detail.scope')}: {project.scope}</p>
 								{/if}
 							</div>
 						</div>
@@ -249,7 +208,7 @@
 						<!-- Objetivos específicos -->
 						{#if project.objectives && project.objectives.length > 0}
 							<div class="bg-gray-50 p-6 rounded-lg mb-8">
-								<h3 class="text-xl font-semibold text-dark-800 mb-4">Objetivos específicos</h3>
+								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.objectives')}</h3>
 								<ul class="space-y-2">
 									{#each project.objectives as objective (objective)}
 										<li class="flex items-start gap-3 text-dark-600">
@@ -264,7 +223,7 @@
 						<!-- Contenidos principales -->
 						{#if project.contents && project.contents.length > 0}
 							<div class="bg-white p-6 rounded-lg border border-gray-200 mb-8">
-								<h3 class="text-xl font-semibold text-dark-800 mb-4">Contenidos principales</h3>
+								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.contents')}</h3>
 								<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 									{#each project.contents as content, index (content)}
 										<div class="flex items-start gap-2 text-dark-600">
@@ -279,16 +238,16 @@
 						<!-- Información adicional del curso -->
 						{#if project.duration || project.modality || project.certification}
 							<div class="bg-primary/10 p-6 rounded-lg mb-8">
-								<h3 class="text-xl font-semibold text-dark-800 mb-4">Información del curso</h3>
+								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.courseInfo')}</h3>
 								<div class="space-y-3 text-dark-600">
 									{#if project.duration}
-										<p><span class="font-semibold">Duración:</span> {project.duration}</p>
+										<p><span class="font-semibold">{$_('projects.detail.duration')}:</span> {project.duration}</p>
 									{/if}
 									{#if project.modality}
-										<p><span class="font-semibold">Modalidad:</span> {project.modality}</p>
+										<p><span class="font-semibold">{$_('projects.detail.modality')}:</span> {project.modality}</p>
 									{/if}
 									{#if project.certification}
-										<p><span class="font-semibold">Certificación:</span> {project.certification}</p>
+										<p><span class="font-semibold">{$_('projects.detail.certification')}:</span> {project.certification}</p>
 									{/if}
 								</div>
 							</div>
@@ -297,16 +256,16 @@
 						<!-- Información del proyecto -->
 						{#if project.organization || project.founder || project.project}
 							<div class="bg-gray-50 p-6 rounded-lg mb-8">
-								<h3 class="text-xl font-semibold text-dark-800 mb-3">Información del proyecto</h3>
+								<h3 class="text-xl font-semibold text-dark-800 mb-3">{$_('projects.detail.projectInfo')}</h3>
 								<div class="space-y-2 text-dark-600">
 									{#if project.organization}
-										<p><span class="font-semibold">Entidad impulsora:</span> {project.organization}</p>
+										<p><span class="font-semibold">{$_('projects.detail.organization')}:</span> {project.organization}</p>
 									{/if}
 									{#if project.founder}
-										<p><span class="font-semibold">Fundadora y directora:</span> {project.founder}</p>
+										<p><span class="font-semibold">{$_('projects.detail.founder')}:</span> {project.founder}</p>
 									{/if}
 									{#if project.project}
-										<p><span class="font-semibold">Proyecto:</span> {project.project}</p>
+										<p><span class="font-semibold">{$_('projects.detail.project')}:</span> {project.project}</p>
 									{/if}
 								</div>
 							</div>
@@ -314,7 +273,7 @@
 						
 						{#if project.activities && project.activities.length > 0}
 							<div class="bg-gray-50 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold text-dark-800 mb-4">Actividades principales</h3>
+								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.activities')}</h3>
 								<ul class="space-y-2">
 									{#each project.activities as activity (activity)}
 										<li class="flex items-start gap-3 text-dark-600">
@@ -332,7 +291,7 @@
 								class="bg-primary text-white px-8 py-3 rounded-md font-semibold hover:bg-secondary transition-colors inline-flex items-center gap-2"
 							>
 								<Heart size={20} />
-								Colaborar con este proyecto
+								{$_('projects.collaborate')}
 							</a>
 						</div>
 					</div>
@@ -340,15 +299,15 @@
 			</div>
 		{:else}
 			<!-- Projects Grid -->
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
-				{#each projects as project (project.id)}
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto items-stretch">
+				{#each projectsList as project, index (project.id)}
 					<button
 						type="button"
-						class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer text-left w-full"
+						class="bg-white rounded-lg p-2 overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer text-left w-full h-full flex flex-col"
 						onclick={() => selectProject(project.id)}
 						onkeydown={(e) => e.key === 'Enter' && selectProject(project.id)}
 					>
-						<div class="relative w-full h-48 overflow-hidden">
+						<div class="relative w-full h-48 overflow-hidden flex-shrink-0">
 							<img
 								src={project.image}
 								alt={project.title}
@@ -365,25 +324,29 @@
 							</div>
 						</div>
 						
-						<div class="p-5 sm:p-6">
-							<h3 class="text-xl sm:text-2xl mb-3 text-dark-800 font-bold">
-								{project.title}
-							</h3>
-							<p class="text-dark-600 mb-4 leading-relaxed text-sm sm:text-base line-clamp-3">
-								{project.description}
-							</p>
-							
-							<div class="flex items-center gap-4 text-sm text-dark-500 mb-4">
-								<div class="flex items-center gap-1">
-									<MapPin size={16} />
-									<span class="truncate">{project.location}</span>
+						<div class="flex-1 flex flex-col p-3 sm:p-4 min-h-0">
+							<div class="flex-1 min-h-0 flex flex-col">
+								<h3 class="text-xl sm:text-2xl mb-3 text-dark-800 font-bold flex-shrink-0">
+									{project.title}
+								</h3>
+								<p class="text-dark-600 mb-4 leading-relaxed text-sm sm:text-base line-clamp-3 flex-shrink-0">
+									{project.description}
+								</p>
+								
+								<div class="flex items-center gap-4 text-sm text-dark-500 mb-4 flex-shrink-0">
+									<div class="flex items-center gap-1">
+										<MapPin size={16} />
+										<span class="truncate">{project.location}</span>
+									</div>
 								</div>
 							</div>
 							
-							<span class="text-primary font-semibold inline-flex items-center gap-2 text-sm sm:text-base w-full justify-center py-2 border border-primary rounded-md block">
-								Ver detalles
-								<ArrowRight size={16} />
-							</span>
+							<div class="mt-auto pt-4 flex-shrink-0">
+								<span class="text-primary font-semibold inline-flex items-center gap-2 text-sm sm:text-base w-full justify-center py-2 border border-primary rounded-md block">
+									{$_('projects.viewDetails')}
+									<ArrowRight size={16} />
+								</span>
+							</div>
 						</div>
 					</button>
 				{/each}
@@ -392,10 +355,10 @@
 			<!-- Call to Action -->
 			<div class="mt-12 sm:mt-16 text-center bg-primary text-white p-8 sm:p-10 md:p-12 rounded-lg">
 				<h2 class="text-2xl sm:text-3xl md:text-4xl mb-4 font-bold">
-					¿Quieres colaborar con nuestros proyectos?
+					{$_('projects.cta.title')}
 				</h2>
 				<p class="text-lg sm:text-xl mb-6 opacity-90 max-w-2xl mx-auto">
-					Tu apoyo hace posible que estos proyectos sigan transformando vidas y preservando la memoria de la infancia migrante
+					{$_('projects.cta.description')}
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
 					<a
@@ -403,7 +366,7 @@
 						class="bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2 justify-center"
 					>
 						<Heart size={20} />
-						Hacer una donación
+						{$_('projects.cta.button')}
 					</a>
 				</div>
 			</div>
