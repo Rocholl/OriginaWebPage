@@ -44,6 +44,14 @@
 			"donateDesc": "Tu contribución hace posible nuestros proyectos",
 			"spread": "Difundir",
 			"spreadDesc": "Comparte nuestra causa en tus redes sociales"
+		},
+		"videos": {
+			"title": "Nuestros Videos",
+			"subtitle": "Descubre nuestros contenidos en YouTube sobre memoria migrante, infancia y comunidad",
+			"loading": "Cargando videos...",
+			"error": "No se pudieron cargar los videos en este momento",
+			"visitChannel": "Visitar canal de YouTube",
+			"viewAll": "Ver todos los videos"
 		}
 	},
 	"about": {
@@ -293,42 +301,95 @@
 			},
 			{
 				"id": 2,
-				"title": "Curso Doula Migrante",
-				"description": "Curso para formar acompañantes conscientes, culturalmente sensibles y con enfoque de derechos humanos, capaces de acompañar nacimientos y procesos migratorios con conciencia, derechos y comunidad.",
-				"fullDescription": "Las mujeres migrantes atraviesan procesos de maternidad, parto y crianza en contextos de desarraigo, barreras idiomáticas, choques culturales y, en muchos casos, vulneración de derechos. El Curso Doula Migrante nace para formar acompañantes conscientes, culturalmente sensibles y con enfoque de derechos humanos. El curso utiliza metodología de educación popular, enfoque vivencial, testimonios reales, trabajo reflexivo y práctico.",
-				"mission": "Formar doulas con perspectiva migrante capaces de acompañar de manera ética, empática y profesional a mujeres y familias en contextos de migración.",
-				"vision": "Acompañar nacimientos y procesos migratorios con conciencia, derechos y comunidad.",
-				"values": ["Conciencia", "Derechos humanos", "Comunidad", "Interculturalidad", "Empatía"],
-				"methodology": "Educación popular, enfoque vivencial, testimonios reales, trabajo reflexivo y práctico.",
+				"title": "Curso Profesional Doula Migrante",
+				"subtitle": "Acompañamiento Integral en el Proceso Migratorio",
+				"description": "Curso profesional para formar Doulas Migrantes capaces de acompañar procesos migratorios desde una perspectiva humana, ética y social, promoviendo el bienestar, la autonomía y la integración social y laboral de personas migrantes.",
+				"fullDescription": "El curso Doula Migrante nace desde la experiencia real de la migración y del acompañamiento comunitario. Está orientado a formar personas capaces de acompañar procesos migratorios desde una perspectiva humana, ética y social, promoviendo el bienestar, la autonomía y la integración social y laboral de personas migrantes.",
+				"mission": "Formar Doulas Migrantes capaces de acompañar procesos migratorios de manera profesional, ética y responsable, trabajando en red con recursos comunitarios e institucionales.",
+				"vision": "Acompañar procesos migratorios con conciencia, derechos y comunidad.",
+				"values": ["Conciencia", "Derechos humanos", "Comunidad", "Interculturalidad", "Ética profesional", "Responsabilidad"],
+				"methodology": "Metodología basada en la experiencia real de la migración y el acompañamiento comunitario, con enfoque práctico y trabajo en red.",
 				"objectives": [
-					"Comprender la experiencia migratoria y su impacto emocional y corporal",
-					"Incorporar enfoque intercultural y de género",
-					"Brindar herramientas prácticas de acompañamiento prenatal, parto y posparto",
-					"Fortalecer redes comunitarias de apoyo"
+					"Acompañar procesos migratorios desde la escucha activa y la contención",
+					"Identificar situaciones de vulnerabilidad y derivar de forma responsable",
+					"Fortalecer la orientación sociolaboral y la empleabilidad",
+					"Desarrollar competencias digitales básicas",
+					"Promover la convivencia intercultural y la mediación comunitaria"
 				],
 				"contents": [
-					"Migración, cuerpo y maternidad",
-					"Rol de la doula migrante",
-					"Derechos reproductivos y humanos",
-					"Interculturalidad y comunicación",
-					"Acompañamiento emocional",
-					"Red de apoyo y autocuidado",
-					"Prácticas comunitarias",
-					"Proyecto final de acompañamiento"
+					"Módulo 1 (20 h): Acompañamiento emocional y resiliencia",
+					"Módulo 2 (20 h): Violencias en contextos migratorios",
+					"Módulo 3 (20 h): Orientación sociolaboral y derechos básicos",
+					"Módulo 4 (30 h): TIC y ofimática aplicada al empleo",
+					"Módulo 5 (20 h): Resolución de conflictos y mediación intercultural",
+					"Módulo 6 (20 h): Integración cultural y trabajo comunitario",
+					"Módulo 7 (10 h): Rol profesional de la Doula Migrante",
+					"Prácticas supervisadas (60 h)"
 				],
+				"curriculum": {
+					"title": "Malla Curricular",
+					"modules": [
+						{
+							"number": 1,
+							"name": "Acompañamiento emocional y resiliencia",
+							"hours": 20
+						},
+						{
+							"number": 2,
+							"name": "Violencias en contextos migratorios",
+							"hours": 20
+						},
+						{
+							"number": 3,
+							"name": "Orientación sociolaboral y derechos básicos",
+							"hours": 20
+						},
+						{
+							"number": 4,
+							"name": "TIC y ofimática aplicada al empleo",
+							"hours": 30
+						},
+						{
+							"number": 5,
+							"name": "Resolución de conflictos y mediación intercultural",
+							"hours": 20
+						},
+						{
+							"number": 6,
+							"name": "Integración cultural y trabajo comunitario",
+							"hours": 20
+						},
+						{
+							"number": 7,
+							"name": "Rol profesional de la Doula Migrante",
+							"hours": 10
+						},
+						{
+							"number": 8,
+							"name": "Prácticas supervisadas",
+							"hours": 60
+						}
+					]
+				},
 				"activities": [
-					"Curso online con encuentros en directo",
-					"Materiales descargables",
-					"Acompañamiento comunitario",
-					"Trabajo reflexivo y práctico",
-					"Proyecto final de acompañamiento"
+					"Formación teórica y práctica",
+					"Trabajo en red con recursos comunitarios e institucionales",
+					"Prácticas supervisadas",
+					"Desarrollo de competencias digitales",
+					"Orientación sociolaboral"
 				],
-				"beneficiaries": "Mujeres migrantes, activistas comunitarias, acompañantes de parto, educadoras, cuidadoras y personas interesadas en el acompañamiento respetuoso",
-				"location": "Online (con encuentros en directo)",
+				"beneficiaries": "Dirigido a personas migrantes y no migrantes, agentes comunitarios, voluntariado social y personas interesadas en acompañar procesos migratorios de manera profesional.",
+				"careerOpportunities": [
+					"Acompañante en proyectos sociales y comunitarios",
+					"Agente de apoyo en ONG y asociaciones",
+					"Mediadora comunitaria intercultural",
+					"Apoyo en programas de inserción sociolaboral"
+				],
+				"location": "Por definir",
 				"status": "Próximamente",
-				"duration": "8 semanas (flexible según edición)",
-				"modality": "Curso online con encuentros en directo, materiales descargables y acompañamiento comunitario",
-				"certification": "Certificado de participación emitido por Origina – Memoria e Infancia en Movimiento",
+				"duration": "180 horas totales",
+				"modality": "Formación profesional con prácticas supervisadas",
+				"certification": "Certificado profesional emitido por Origina – Memoria e Infancia en Movimiento",
 				"founder": "Ana Paniagua T.",
 				"organization": "ONG Origina – Memoria e Infancia en Movimiento",
 				"project": "Nosotras las que Migramos (NQM)",
@@ -344,8 +405,10 @@
 			"location": "Ubicación",
 			"beneficiaries": "Beneficiarios",
 			"scope": "Ámbito",
-			"objectives": "Objetivos específicos",
+			"objectives": "Objetivos del curso",
 			"contents": "Contenidos principales",
+			"curriculum": "Malla curricular",
+			"careerOpportunities": "Salidas laborales",
 			"courseInfo": "Información del curso",
 			"duration": "Duración",
 			"modality": "Modalidad",
@@ -354,7 +417,9 @@
 			"organization": "Entidad impulsora",
 			"founder": "Fundadora y directora",
 			"project": "Proyecto",
-			"activities": "Actividades principales"
+			"activities": "Actividades principales",
+			"module": "Módulo",
+			"hours": "horas"
 		},
 		"cta": {
 			"title": "¿Quieres colaborar con nuestros proyectos?",

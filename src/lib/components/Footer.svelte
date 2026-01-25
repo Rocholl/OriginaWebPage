@@ -1,6 +1,6 @@
 <script>
 	import { _ } from 'svelte-i18n';
-	import { Instagram, Heart, Users, Mail, Globe } from 'lucide-svelte';
+	import { Instagram, Heart, Users, Mail, Globe, Youtube } from 'lucide-svelte';
 </script>
 
 <footer class="bg-gray-800 text-white py-8 md:py-12 mt-16">
@@ -33,6 +33,9 @@
 				<div class="flex gap-3 md:gap-4 mb-4">
 					<a href="https://www.instagram.com/origina.memoria" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white/80 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
 						<Instagram size={20} class="md:w-6 md:h-6" />
+					</a>
+					<a href="https://www.youtube.com/@origina.memoria" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white/80 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
+						<Youtube size={20} class="md:w-6 md:h-6" />
 					</a>
 				</div>
 			</div>

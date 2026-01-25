@@ -127,9 +127,16 @@
 									<Icon class="text-primary" size={32} />
 								{/if}
 							</div>
-							<h2 class="text-3xl sm:text-4xl md:text-5xl text-dark-800 font-bold">
-								{project.title}
-							</h2>
+							<div>
+								<h2 class="text-3xl sm:text-4xl md:text-5xl text-dark-800 font-bold">
+									{project.title}
+								</h2>
+								{#if project.subtitle}
+									<p class="text-xl sm:text-2xl text-dark-600 mt-2">
+										{project.subtitle}
+									</p>
+								{/if}
+							</div>
 						</div>
 						
 						<p class="text-dark-600 text-lg sm:text-xl mb-6 leading-relaxed">
@@ -220,8 +227,30 @@
 							</div>
 						{/if}
 
-						<!-- Contenidos principales -->
-						{#if project.contents && project.contents.length > 0}
+						<!-- Malla Curricular -->
+						{#if project.curriculum && project.curriculum.modules && project.curriculum.modules.length > 0}
+							<div class="bg-white p-6 rounded-lg border border-gray-200 mb-8">
+								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.curriculum')}</h3>
+								<div class="space-y-3">
+									{#each project.curriculum.modules as module (module.number)}
+										<div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+											<span class="text-primary font-bold text-lg min-w-[60px]">
+												{$_('projects.detail.module')} {module.number}
+											</span>
+											<div class="flex-1">
+												<p class="text-dark-800 font-medium">{module.name}</p>
+												<p class="text-dark-500 text-sm mt-1">
+													{module.hours} {$_('projects.detail.hours')}
+												</p>
+											</div>
+										</div>
+									{/each}
+								</div>
+							</div>
+						{/if}
+
+						<!-- Contenidos principales (fallback si no hay curriculum estructurado) -->
+						{#if (!project.curriculum || !project.curriculum.modules) && project.contents && project.contents.length > 0}
 							<div class="bg-white p-6 rounded-lg border border-gray-200 mb-8">
 								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.contents')}</h3>
 								<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -229,6 +258,21 @@
 										<div class="flex items-start gap-2 text-dark-600">
 											<span class="text-primary font-bold">{index + 1}.</span>
 											<span>{content}</span>
+										</div>
+									{/each}
+								</div>
+							</div>
+						{/if}
+
+						<!-- Salidas laborales -->
+						{#if project.careerOpportunities && project.careerOpportunities.length > 0}
+							<div class="bg-primary/10 p-6 rounded-lg mb-8">
+								<h3 class="text-xl font-semibold text-dark-800 mb-4">{$_('projects.detail.careerOpportunities')}</h3>
+								<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+									{#each project.careerOpportunities as opportunity (opportunity)}
+										<div class="flex items-start gap-2 text-dark-600">
+											<span class="text-primary mt-1">•</span>
+											<span>{opportunity}</span>
 										</div>
 									{/each}
 								</div>

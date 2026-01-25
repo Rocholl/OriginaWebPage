@@ -1,6 +1,6 @@
 <script>
 	import { _ } from 'svelte-i18n';
-	import { Target, Eye, Shield, Heart, History, FileText, Users, Award, Building2, Leaf, Mail, Phone, MapPin, CheckCircle2, Instagram } from 'lucide-svelte';
+	import { Target, Eye, Shield, Heart, History, FileText, Users, Award, Building2, Leaf, Mail, Phone, MapPin, CheckCircle2, Instagram, Youtube } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -260,6 +260,10 @@
 					<div class="flex items-center gap-3">
 						<Instagram size={20} class="flex-shrink-0" />
 						<a href="https://www.instagram.com/origina.memoria" target="_blank" rel="noopener noreferrer" class="hover:underline">@origina.memoria</a>
+					</div>
+					<div class="flex items-center gap-3">
+						<Youtube size={20} class="flex-shrink-0" />
+						<a href="https://www.youtube.com/@origina.memoria" target="_blank" rel="noopener noreferrer" class="hover:underline">@origina.memoria</a>
 					</div>
 				</div>
 			</section>

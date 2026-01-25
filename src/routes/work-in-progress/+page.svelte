@@ -1,6 +1,6 @@
 <script>
 	import { _ } from 'svelte-i18n';
-	import { Construction, ArrowLeft, Home, Instagram } from 'lucide-svelte';
+	import { Construction, ArrowLeft, Home, Instagram, Youtube } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -48,6 +48,15 @@
 			>
 				<Instagram size={20} />
 				Síguenos en Instagram
+			</a>
+			<a
+				href="https://www.youtube.com/@origina.memoria"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="bg-white border-2 border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold hover:bg-primary/5 transition-colors inline-flex items-center gap-2 justify-center"
+			>
+				<Youtube size={20} />
+				Síguenos en YouTube
 			</a>
 		</div>
 	</div>

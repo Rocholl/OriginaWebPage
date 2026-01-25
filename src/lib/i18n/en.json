@@ -44,6 +44,14 @@
 			"donateDesc": "Your contribution makes our projects possible",
 			"spread": "Spread the word",
 			"spreadDesc": "Share our cause on your social networks"
+		},
+		"videos": {
+			"title": "Our Videos",
+			"subtitle": "Discover our YouTube content about migrant memory, childhood and community",
+			"loading": "Loading videos...",
+			"error": "Could not load videos at this time",
+			"visitChannel": "Visit YouTube channel",
+			"viewAll": "View all videos"
 		}
 	},
 	"about": {

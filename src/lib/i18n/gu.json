@@ -44,6 +44,14 @@
 			"donateDesc": "Nde pytyvõ omoĩporãva ñande tembiapo",
 			"spread": "Moherakuã",
 			"spreadDesc": "Eme'ẽ nde tekohápe ñande rembipota"
+		},
+		"videos": {
+			"title": "Ñande ta'ãnga",
+			"subtitle": "Ehecha ñande YouTube rehegua ñemongu'e mandu'a, mitãrusu ha tekoha rehegua",
+			"loading": "Oñemboguejýva ta'ãnga...",
+			"error": "Ndojapóiva oñemboguejy ta'ãnga ko'ágã",
+			"visitChannel": "Ehecha YouTube canal",
+			"viewAll": "Ehecha opavavéva ta'ãnga"
 		}
 	},
 	"about": {

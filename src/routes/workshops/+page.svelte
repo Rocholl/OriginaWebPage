@@ -1,6 +1,6 @@
 <script>
 	import { _ } from 'svelte-i18n';
-	import { BookOpen, Heart, MapPin, ArrowRight, Target, Users, Calendar, Sparkles, CheckCircle2 } from 'lucide-svelte';
+	import { BookOpen, Heart, MapPin, ArrowRight, Target, Users, Calendar, Sparkles, CheckCircle2, Image as ImageIcon, Video } from 'lucide-svelte';
 	
 	const workshops = [
 		{
@@ -56,11 +56,24 @@
 				'Producción de materiales visuales (murales, maquetas, videos)',
 				'Fortalecimiento del sentido de pertenencia e identidad cultural'
 			],
-			closing: 'Exposición final abierta a las familias y comunidad, donde se presentan los trabajos realizados durante el taller'
+			closing: 'Exposición final abierta a las familias y comunidad, donde se presentan los trabajos realizados durante el taller',
+			gallery: {
+				images: [
+					'/talleres/IMG-20250906-WA0018.jpg',
+					'/talleres/IMG-20251122-WA0055.jpg',
+					'/talleres/IMG-20251122-WA0061.jpg',
+					'/talleres/IMG-20251122-WA0073.jpg'
+				],
+				videos: [
+					'/talleres/VID-20250906-WA0029.mp4',
+					'/talleres/VID-20251122-WA0121.mp4'
+				]
+			}
 		}
 	];
 	
 	let selectedWorkshopId = $state(/** @type {number | null} */ (null));
+	let selectedImageIndex = $state(/** @type {number | null} */ (null));
 	
 	/**
 	 * @param {number | null} id
@@ -74,9 +87,34 @@
 	
 	function closeWorkshop() {
 		selectedWorkshopId = null;
+		selectedImageIndex = null;
+	}
+
+	/**
+	 * @param {number} index
+	 */
+	function openImageLightbox(index) {
+		selectedImageIndex = index;
+	}
+
+	function closeImageLightbox() {
+		selectedImageIndex = null;
+	}
+
+	function nextImage() {
+		if (selectedWorkshop?.gallery?.images) {
+			selectedImageIndex = ((selectedImageIndex ?? 0) + 1) % selectedWorkshop.gallery.images.length;
+		}
+	}
+
+	function prevImage() {
+		if (selectedWorkshop?.gallery?.images) {
+			selectedImageIndex = ((selectedImageIndex ?? 0) - 1 + selectedWorkshop.gallery.images.length) % selectedWorkshop.gallery.images.length;
+		}
 	}
 	
 	let selectedWorkshop = $derived(workshops.find(w => w.id === selectedWorkshopId) || null);
+	let lightboxImage = $derived(selectedWorkshop?.gallery?.images?.[selectedImageIndex ?? 0] || null);
 </script>
 
 <svelte:head>
@@ -283,6 +321,65 @@
 								</ul>
 							</div>
 						{/if}
+
+						<!-- Galería de Imágenes y Videos -->
+						{#if workshop.gallery && (workshop.gallery.images?.length > 0 || workshop.gallery.videos?.length > 0)}
+							<div class="bg-white p-6 rounded-lg border border-gray-200 mb-8">
+								<h3 class="text-xl font-semibold text-dark-800 mb-6">Galería del Taller</h3>
+								
+								<!-- Videos -->
+								{#if workshop.gallery.videos && workshop.gallery.videos.length > 0}
+									<div class="mb-8">
+										<div class="flex items-center gap-2 mb-4">
+											<Video size={24} class="text-primary" />
+											<h4 class="text-lg font-semibold text-dark-800">Videos</h4>
+										</div>
+										<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+											{#each workshop.gallery.videos as video (video)}
+												<div class="relative w-full rounded-lg overflow-hidden bg-gray-100">
+													<video
+														controls
+														class="w-full h-auto"
+														preload="metadata"
+													>
+														<source src={video} type="video/mp4" />
+														Tu navegador no soporta la reproducción de videos.
+													</video>
+												</div>
+											{/each}
+										</div>
+									</div>
+								{/if}
+
+								<!-- Imágenes -->
+								{#if workshop.gallery.images && workshop.gallery.images.length > 0}
+									<div>
+										<div class="flex items-center gap-2 mb-4">
+											<ImageIcon size={24} class="text-primary" />
+											<h4 class="text-lg font-semibold text-dark-800">Imágenes</h4>
+										</div>
+										<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+											{#each workshop.gallery.images as image, index (image)}
+												{@const imageIndex = index}
+												<button
+													type="button"
+													onclick={() => openImageLightbox(imageIndex)}
+													class="relative w-full aspect-square rounded-lg overflow-hidden bg-gray-100 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+												>
+													<img
+														src={image}
+														alt="Imagen del taller Escuelita Origina"
+														class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+														loading="lazy"
+													/>
+													<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+												</button>
+											{/each}
+										</div>
+									</div>
+								{/if}
+							</div>
+						{/if}
 						
 						<div class="mt-8 pt-8 border-t border-gray-200">
 							<a
@@ -368,6 +465,64 @@
 		{/if}
 	</div>
 </div>
+
+<!-- Lightbox para imágenes -->
+{#if selectedImageIndex !== null && lightboxImage}
+	<div
+		class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+		onclick={closeImageLightbox}
+		onkeydown={(e) => e.key === 'Escape' && closeImageLightbox()}
+		role="dialog"
+		aria-modal="true"
+		aria-label="Vista ampliada de imagen"
+		tabindex="-1"
+	>
+		<button
+			type="button"
+			onclick={(e) => { e.stopPropagation(); closeImageLightbox(); }}
+			onkeydown={(e) => e.key === 'Enter' && closeImageLightbox()}
+			class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+			aria-label="Cerrar"
+		>
+			<ArrowRight size={32} class="rotate-45" />
+		</button>
+		
+		{#if selectedWorkshop?.gallery?.images && selectedWorkshop.gallery.images.length > 1}
+			<button
+				type="button"
+				onclick={(e) => { e.stopPropagation(); prevImage(); }}
+				onkeydown={(e) => e.key === 'Enter' && prevImage()}
+				class="absolute left-4 text-white hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full p-2"
+				aria-label="Imagen anterior"
+			>
+				<ArrowRight size={24} class="rotate-180" />
+			</button>
+			<button
+				type="button"
+				onclick={(e) => { e.stopPropagation(); nextImage(); }}
+				onkeydown={(e) => e.key === 'Enter' && nextImage()}
+				class="absolute right-4 text-white hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full p-2"
+				aria-label="Imagen siguiente"
+			>
+				<ArrowRight size={24} />
+			</button>
+		{/if}
+		
+		<div class="max-w-full max-h-full">
+			<img
+				src={lightboxImage}
+				alt="Imagen ampliada del taller Escuelita Origina"
+				class="max-w-full max-h-full object-contain"
+			/>
+		</div>
+		
+		{#if selectedWorkshop?.gallery?.images && selectedWorkshop.gallery.images.length > 1}
+			<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
+				{(selectedImageIndex ?? 0) + 1} / {selectedWorkshop.gallery.images.length}
+			</div>
+		{/if}
+	</div>
+{/if}
 
 <style>
 	.line-clamp-3 {

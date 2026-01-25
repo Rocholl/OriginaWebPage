@@ -1,8 +1,9 @@
 <script>
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Articles from '$lib/components/Articles.svelte';
+	import YouTubeVideos from '$lib/components/YouTubeVideos.svelte';
 	import { _ } from 'svelte-i18n';
-	import { Heart, Share2, Users, Target, Eye, Shield, Users2, HeartHandshake, Instagram } from 'lucide-svelte';
+	import { Heart, Share2, Users, Target, Eye, Shield, Users2, HeartHandshake, Instagram, Youtube } from 'lucide-svelte';
 	
 	const carouselImages = [
 		{
@@ -35,8 +36,8 @@
 		},
 		{
 			id: 2,
-			title: 'Curso Doula Migrante',
-			excerpt: 'Curso para formar acompañantes conscientes, culturalmente sensibles y con enfoque de derechos humanos, capaces de acompañar nacimientos y procesos migratorios con conciencia, derechos y comunidad.',
+			title: 'Curso Profesional Doula Migrante',
+			excerpt: 'Curso profesional para formar Doulas Migrantes capaces de acompañar procesos migratorios desde una perspectiva humana, ética y social, promoviendo el bienestar, la autonomía y la integración social y laboral de personas migrantes.',
 			image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
 			link: '/projects?id=2'
 		}
@@ -172,6 +173,9 @@
 	<!-- Projects Section -->
 	<Articles articles={projects} />
 	
+	<!-- YouTube Videos Section -->
+	<YouTubeVideos />
+	
 	<!-- How to Help Section -->
 	<section class="py-10 sm:py-12 md:py-16 bg-beige">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -214,6 +218,9 @@
 					<div class="flex gap-3 sm:gap-4 justify-center">
 						<a href="https://www.instagram.com/origina.memoria" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary transition-colors p-2 hover:bg-primary/10 rounded-full" aria-label="Instagram">
 							<Instagram size={20} class="sm:w-6 sm:h-6" />
+						</a>
+						<a href="https://www.youtube.com/@origina.memoria" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary transition-colors p-2 hover:bg-primary/10 rounded-full" aria-label="YouTube">
+							<Youtube size={20} class="sm:w-6 sm:h-6" />
 						</a>
 					</div>
 				</div>
