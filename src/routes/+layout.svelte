@@ -8,6 +8,9 @@
 <svelte:head>
 	<meta name="color-scheme" content="light" />
 	<meta name="theme-color" content="#ffffff" />
+	<link rel="icon" type="image/png" href="/logo.png" />
+	<link rel="apple-touch-icon" href="/logo.png" />
+	<link rel="shortcut icon" href="/logo.png" />
 </svelte:head>
 
 <Header />
